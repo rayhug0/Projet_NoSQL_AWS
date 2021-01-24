@@ -1,0 +1,926 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "import sys.process._\nimport java.net.URL\nimport java.io.File\nimport java.io.File\nimport java.nio.file.{Files, StandardCopyOption}\nimport java.net.HttpURLConnection \nimport org.apache.spark.sql.functions._\nimport org.apache.spark.sql.SQLContext\nimport org.apache.spark.input.PortableDataStream\nimport java.util.zip.ZipInputStream\nimport java.io.BufferedReader\nimport java.io.InputStreamReader\nimport com.amazonaws.services.s3.AmazonS3Client\nimport com.amazonaws.auth.BasicAWSCredentials\nimport com.datastax.spark.connector.cql.CassandraConnector\nimport org.apache.spark.sql.cassandra._\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import sys.process._\nimport java.net.URL\nimport java.io.File\nimport java.io.File\nimport java.nio.file.{Files, StandardCopyOption}\nimport java.net.HttpURLConnection\nimport org.apache.spark.sql.functions._\nimport org.apache.spark.sql.SQLContext\nimport org.apache.spark.input.PortableDataStream\nimport java.util.zip.ZipInputStream\nimport java.io.BufferedReader\nimport java.io.InputStreamReader\nimport com.amazonaws.services.s3.AmazonS3Client\nimport com.amazonaws.auth.BasicAWSCredentials\nimport com.datastax.spark.connector.cql.CassandraConnector\nimport org.apache.spark.sql.cassandra._\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980211_1232972008",
+      "id": "20210121-231536_1203187804",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:22143"
+    },
+    {
+      "text": "%md\n## Requête 1",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Requête 1</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980211_404422702",
+      "id": "20210121-231554_362422895",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22144"
+    },
+    {
+      "text": "%md\nAfficher le nombre d’articles/événements qui parlent de COVID qu’il y a eu pour chaque triplet :\nJour (de publication de l'article)\npays de l’évènement\nlangue de l’article",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Afficher le nombre d’articles/événements qui parlent de COVID qu’il y a eu pour chaque triplet :<br/>Jour (de publication de l&rsquo;article)<br/>pays de l’évènement<br/>langue de l’article</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980212_401050566",
+      "id": "20210122-005025_2010637590",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22145"
+    },
+    {
+      "text": "val req1 = spark.read.cassandraFormat(\"table_r1\", \"gdelt\").load()\nreq1.createOrReplaceTempView(\"vue_req1\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "req1: org.apache.spark.sql.DataFrame = [day: string, actioncountry: string ... 3 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980212_1059106715",
+      "id": "20210121-231533_1522646538",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22146"
+    },
+    {
+      "text": "z.show(spark.sql(\"\"\"SELECT numarticles, globaleventid FROM vue_req1 LIMIT 10\"\"\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "numarticles",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "globaleventid",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "numarticles\tglobaleventid\n10\t909344602\n1\t909344718\n10\t909345305\n10\t909345480\n1\t909344658\n1\t909345029\n1\t909343444\n1\t909343786\n1\t909346148\n1\t909343453\n1\t909343458\n7\t909343467\n7\t909343547\n7\t909343554\n1\t909343555\n1\t909343556\n7\t909343557\n1\t909343777\n1\t909343778\n1\t909343779\n2\t909343783\n1\t909343796\n2\t909343799\n7\t909343811\n2\t909343838\n2\t909343840\n7\t909343844\n7\t909343845\n6\t909343857\n6\t909343858\n6\t909343861\n1\t909343869\n1\t909343872\n1\t909343889\n4\t909343890\n1\t909343892\n1\t909343894\n1\t909343897\n4\t909343901\n1\t909343902\n7\t909343959\n10\t909343997\n10\t909343998\n1\t909344064\n1\t909344065\n1\t909344120\n1\t909344123\n1\t909344135\n1\t909344167\n7\t909344253\n7\t909344270\n7\t909344273\n7\t909344274\n7\t909344275\n7\t909344276\n7\t909344277\n7\t909344278\n7\t909344279\n4\t909344280\n4\t909344283\n1\t909344286\n7\t909344297\n7\t909344300\n1\t909344303\n7\t909344311\n1\t909344489\n1\t909344497\n1\t909344502\n1\t909344542\n1\t909344554\n1\t909344600\n1\t909344601\n2\t909344603\n1\t909344604\n2\t909344606\n2\t909344608\n2\t909344610\n4\t909344611\n1\t909344613\n1\t909344617\n1\t909344619\n4\t909344621\n1\t909344622\n1\t909344623\n4\t909344624\n1\t909344627\n1\t909344631\n1\t909344632\n10\t909344634\n4\t909344635\n1\t909344638\n4\t909344640\n7\t909344642\n1\t909344644\n1\t909344645\n4\t909344646\n7\t909344647\n2\t909344655\n2\t909344657\n2\t909344660\n4\t909344664\n2\t909344665\n7\t909344668\n7\t909344670\n2\t909344673\n1\t909344702\n1\t909344705\n2\t909344822\n1\t909344827\n2\t909344860\n2\t909344967\n2\t909345023\n12\t909345024\n1\t909345028\n1\t909345045\n1\t909345046\n1\t909345047\n1\t909345049\n1\t909345380\n1\t909345469\n4\t909345474\n10\t909345477\n12\t909345479\n6\t909345482\n10\t909345484\n6\t909345495\n6\t909345496\n10\t909345509\n6\t909345642\n2\t909343460\n9\t909343461\n1\t909343462\n1\t909343569\n1\t909343774\n1\t909343775\n1\t909343806\n2\t909343827\n1\t909343917\n9\t909343918\n1\t909343919\n2\t909343920\n1\t909343923\n1\t909343924\n1\t909343928\n1\t909343929\n1\t909343931\n1\t909343932\n1\t909343933\n1\t909344002\n1\t909344058\n1\t909344148\n1\t909344149\n1\t909344152\n1\t909344153\n1\t909344154\n1\t909344155\n2\t909344306\n1\t909344366\n1\t909344375\n1\t909344383\n1\t909344403\n6\t909344440\n6\t909344441\n6\t909344458\n1\t909344490\n1\t909344626\n1\t909344722\n1\t909344724\n1\t909344727\n1\t909344728\n1\t909344744\n1\t909344745\n2\t909345163\n1\t909345208\n1\t909345212\n1\t909345262\n1\t909345370\n2\t909345478\n6\t909345481\n2\t909345483\n2\t909345508\n1\t909345528\n1\t909344071\n2\t909344072\n1\t909344955\n2\t909344956\n1\t909344957\n2\t909344958\n1\t909344959\n2\t909344960\n1\t909343405\n1\t909343407\n1\t909343390\n1\t909343406\n1\t909344302\n1\t909344643\n1\t909345291\n1\t909345369\n1\t909345639\n1\t909345803\n1\t909345804\n1\t909345855\n1\t909345859\n1\t909345949\n1\t909345950\n1\t909346162\n1\t909346174\n1\t909346190\n1\t909346210\n1\t909346248\n1\t909346249\n1\t909346254\n1\t909346264\n1\t909346289\n1\t909346293\n1\t909346321\n1\t909346323\n1\t909346324\n1\t909346367\n1\t909346368\n1\t909346374\n1\t909346532\n1\t909346553\n1\t909346561\n1\t909346565\n1\t909346566\n1\t909346567\n1\t909346570\n1\t909346576\n1\t909346578\n1\t909346125\n7\t909343466\n7\t909343517\n10\t909343518\n1\t909343520\n1\t909343528\n7\t909343810\n7\t909343843\n1\t909343878\n7\t909343957\n10\t909344190\n10\t909344191\n10\t909344195\n10\t909344198\n10\t909344200\n10\t909344202\n10\t909344203\n10\t909344204\n10\t909344205\n10\t909344236\n10\t909344237\n10\t909344238\n4\t909344239\n1\t909344242\n10\t909344244\n2\t909344245\n1\t909344252\n10\t909344256\n10\t909344258\n1\t909344259\n10\t909344260\n10\t909344261\n10\t909344262\n7\t909344266\n7\t909344267\n7\t909344269\n7\t909344272\n7\t909344281\n7\t909344284\n7\t909344285\n10\t909344291\n10\t909344292\n10\t909344293\n1\t909344294\n10\t909344295\n10\t909344296\n7\t909344298\n7\t909344299\n7\t909344308\n1\t909344329\n1\t909344392\n10\t909344393\n10\t909344394\n10\t909344493\n10\t909344633\n7\t909344636\n7\t909344637\n7\t909344639\n7\t909344641\n10\t909344667\n7\t909344669\n2\t909344603\n1\t909345760\n1\t909345808\n1\t909346175\n1\t909346262\n2\t909346263\n1\t909346268\n1\t909346269\n1\t909346270\n1\t909346577\n1\t909343588\n1\t909343803\n1\t909344391\n1\t909344541\n1\t909344857\n1\t909345691\n12\t909343781\n12\t909343782\n10\t909343784\n12\t909343798\n12\t909343800\n10\t909343801\n1\t909344234\n12\t909344671\n12\t909344672\n10\t909344674\n1\t909344692\n12\t909344823\n10\t909344824\n12\t909344825\n10\t909344861\n12\t909344862\n12\t909344863\n10\t909344968\n12\t909344969\n12\t909344970\n1\t909345039\n1\t909345819\n1\t909346334\n1\t909346555\n1\t909346556\n1\t909346558\n1\t909343559\n1\t909344687\n1\t909345810\n2\t909346099\n1\t909346216\n1\t909346584\n1\t909346585\n1\t909343765\n1\t909343766\n1\t909344572\n1\t909345273\n5\t909345663\n1\t909343536\n1\t909343802\n2\t909343839\n1\t909344224\n1\t909344226\n1\t909344412\n1\t909344413\n1\t909344488\n2\t909344605\n2\t909344609\n1\t909344835\n1\t909344854\n1\t909344858\n1\t909344859\n1\t909345690\n1\t909346158\n1\t909344766\n1\t909345027\n1\t909345798\n1\t909345974\n1\t909345983\n1\t909346390\n1\t909343562\n1\t909343592\n1\t909344770\n1\t909344910\n1\t909344913\n1\t909344914\n2\t909344921\n1\t909344925\n1\t909346076\n1\t909345741\n1\t909346098\n1\t909346137\n1\t909346144\n1\t909346018\n1\t909346199\n1\t909345824\n1\t909345958\n1\t909345959\n1\t909345960\n1\t909345961\n1\t909346095\n1\t909346330\n1\t909346349\n1\t909346350\n1\t909344518\n1\t909344519\n1\t909344694\n1\t909346344\n1\t909346347\n1\t909343505\n2\t909343820\n1\t909344315\n1\t909344400\n1\t909344402\n1\t909344406\n1\t909344407\n1\t909344409\n2\t909344449\n2\t909344450\n1\t909344465\n1\t909344466\n2\t909344651\n1\t909344703\n3\t909344704\n1\t909344706\n1\t909344708\n1\t909344742\n1\t909344747\n1\t909344748\n1\t909344749\n1\t909344751\n2\t909344753\n1\t909344755\n1\t909344756\n1\t909344757\n1\t909344758\n3\t909344760\n10\t909344761\n1\t909344764\n1\t909344872\n1\t909345026\n1\t909345050\n1\t909345051\n1\t909345397\n1\t909345432\n1\t909345435\n3\t909345500\n10\t909345503\n1\t909345505\n1\t909345506\n1\t909345507\n1\t909345653\n1\t909343460\n1\t909343920\n1\t909346138\n1\t909346161\n1\t909346372\n1\t909345762\n1\t909345992\n1\t909345995\n1\t909343451\n1\t909343452\n1\t909343459\n1\t909343544\n1\t909343864\n1\t909343870\n1\t909343871\n1\t909343874\n1\t909343875\n1\t909343879\n1\t909343880\n1\t909343891\n1\t909343893\n1\t909343895\n1\t909343896\n4\t909343898\n1\t909343910\n1\t909343914\n1\t909343925\n1\t909343926\n1\t909343927\n1\t909343930\n4\t909344495\n1\t909344531\n1\t909344615\n1\t909344616\n1\t909344618\n1\t909344620\n1\t909344630\n1\t909344662\n1\t909344663\n1\t909345377\n1\t909345472\n1\t909345473\n1\t909345860\n1\t909344367\n1\t909344963\n5\t909343446\n1\t909343447\n10\t909343448\n1\t909343475\n1\t909343476\n4\t909343478\n1\t909343479\n1\t909343480\n3\t909343481\n4\t909343483\n1\t909343485\n1\t909343487\n1\t909343488\n10\t909343490\n1\t909343491\n1\t909343492\n1\t909343494\n1\t909343529\n1\t909343531\n3\t909343538\n1\t909343577\n1\t909343589\n3\t909343613\n1\t909343616\n1\t909343618\n1\t909343623\n3\t909343627\n1\t909343628\n1\t909343631\n1\t909343633\n1\t909343637\n1\t909343650\n3\t909343652\n1\t909343653\n3\t909343658\n1\t909343659\n2\t909343660\n3\t909343661\n1\t909343664\n1\t909343670\n1\t909343671\n1\t909343672\n1\t909343673\n1\t909343674\n3\t909343675\n11\t909343813\n5\t909343814\n1\t909343815\n10\t909343816\n1\t909343817\n5\t909343819\n1\t909343825\n2\t909343835\n1\t909343836\n2\t909343837\n6\t909343849\n9\t909343850\n1\t909343851\n6\t909343852\n9\t909343854\n6\t909343856\n6\t909343859\n11\t909343860\n1\t909343899\n3\t909343900\n3\t909344023\n1\t909344034\n1\t909344138\n1\t909344140\n1\t909344150\n1\t909344151\n1\t909344159\n4\t909344160\n1\t909344161\n9\t909344162\n1\t909344177\n1\t909344178\n1\t909344268\n4\t909344282\n1\t909344313\n2\t909344314\n6\t909344320\n3\t909344321\n6\t909344322\n1\t909344325\n1\t909344333\n7\t909344344\n2\t909344349\n1\t909344352\n4\t909344365\n1\t909344386\n1\t909344387\n2\t909344395\n1\t909344442\n1\t909344443\n2\t909344444\n1\t909344445\n3\t909344451\n6\t909344452\n3\t909344453\n6\t909344454\n5\t909344455\n6\t909344456\n6\t909344457\n1\t909344464\n1\t909344467\n4\t909344475\n1\t909344477\n1\t909344478\n1\t909344491\n1\t909344492\n4\t909344496\n4\t909344498\n3\t909344499\n1\t909344500\n1\t909344501\n1\t909344503\n1\t909344506\n10\t909344507\n3\t909344508\n3\t909344509\n6\t909344510\n6\t909344511\n1\t909344512\n9\t909344513\n1\t909344534\n1\t909344553\n2\t909344607\n2\t909344649\n2\t909344650\n2\t909344652\n2\t909344656\n2\t909344659\n2\t909344661\n5\t909344701\n1\t909344725\n1\t909344741\n1\t909344746\n2\t909344754\n3\t909344759\n1\t909344762\n9\t909344763\n3\t909344769\n9\t909344772\n1\t909344773\n5\t909344774\n1\t909344775\n9\t909344776\n1\t909344777\n6\t909344778\n6\t909344779\n1\t909344804\n1\t909344808\n1\t909344836\n1\t909344837\n1\t909344840\n1\t909344849\n1\t909344983\n1\t909345000\n1\t909345007\n3\t909345149\n1\t909345167\n1\t909345168\n3\t909345171\n1\t909345181\n4\t909345184\n1\t909345186\n2\t909345190\n4\t909345192\n1\t909345196\n1\t909345197\n1\t909345200\n4\t909345202\n1\t909345211\n3\t909345215\n1\t909345217\n1\t909345223\n1\t909345228\n3\t909345229\n3\t909345230\n1\t909345232\n4\t909345237\n1\t909345238\n1\t909345245\n1\t909345249\n1\t909345252\n1\t909345263\n1\t909345267\n4\t909345270\n5\t909345271\n1\t909345276\n1\t909345277\n3\t909345279\n4\t909345281\n1\t909345286\n1\t909345290\n12\t909345291\n4\t909345296\n1\t909345297\n1\t909345298\n1\t909345302\n12\t909345304\n3\t909345306\n1\t909345310\n1\t909345311\n1\t909345314\n3\t909345369\n9\t909345371\n6\t909345372\n9\t909345374\n1\t909345375\n3\t909345379\n3\t909345381\n3\t909345390\n1\t909345396\n1\t909345398\n1\t909345399\n5\t909345401\n1\t909345402\n5\t909345403\n1\t909345409\n1\t909345411\n4\t909345412\n1\t909345413\n9\t909345414\n1\t909345415\n1\t909345418\n1\t909345425\n1\t909345426\n1\t909345429\n1\t909345431\n1\t909345436\n1\t909345438\n1\t909345452\n1\t909345453\n1\t909345454\n1\t909345455\n1\t909345456\n3\t909345457\n1\t909345458\n5\t909345459\n3\t909345460\n3\t909345461\n6\t909345462\n6\t909345463\n1\t909345464\n9\t909345465\n3\t909345466\n6\t909345467\n2\t909345475\n10\t909345476\n3\t909345494\n1\t909345498\n3\t909345499\n1\t909345502\n9\t909345504\n1\t909345511\n1\t909345513\n1\t909345525\n3\t909345529\n5\t909345530\n3\t909345531\n2\t909345568\n4\t909345569\n5\t909345572\n1\t909345573\n1\t909345574\n1\t909345576\n3\t909345585\n1\t909345586\n1\t909345587\n2\t909345589\n3\t909345590\n1\t909345591\n1\t909345592\n4\t909345593\n1\t909345617\n1\t909345624\n1\t909345630\n1\t909345634\n4\t909345635\n1\t909345636\n5\t909345639\n6\t909345640\n11\t909345641\n3\t909345650\n2\t909345651\n1\t909345657\n2\t909345659\n1\t909345664\n1\t909345665\n1\t909345666\n1\t909345667\n1\t909345673\n1\t909345674\n1\t909345685\n2\t909345686\n4\t909345687\n2\t909345688\n1\t909345689\n1\t909345692\n1\t909345700\n1\t909346413\n1\t909343523\n1\t909343524\n1\t909344112\n1\t909344113\n1\t909344114\n1\t909344115\n1\t909344118\n1\t909344119\n1\t909344121\n1\t909344122\n1\t909344186\n1\t909344187\n1\t909344309\n1\t909344390\n1\t909344526\n1\t909344527\n3\t909345925\n1\t909345932\n3\t909346079\n1\t909343525\n1\t909343558\n1\t909343559\n2\t909343560\n1\t909343561\n1\t909343563\n2\t909343564\n2\t909343565\n1\t909343566\n1\t909343804\n1\t909343805\n1\t909344057\n1\t909344116\n1\t909344188\n1\t909344223\n1\t909344225\n1\t909344233\n1\t909344235\n2\t909344271\n1\t909344401\n1\t909344408\n1\t909344410\n1\t909344446\n1\t909344504\n1\t909344505\n1\t909344520\n1\t909344535\n1\t909344548\n2\t909344592\n12\t909344648\n12\t909344653\n12\t909344654\n1\t909344684\n2\t909344685\n1\t909344686\n1\t909344687\n1\t909344688\n1\t909344691\n1\t909344693\n1\t909344695\n1\t909344696\n1\t909344697\n1\t909344699\n1\t909344700\n1\t909344707\n1\t909344709\n1\t909344710\n1\t909344712\n1\t909344713\n1\t909344750\n1\t909344752\n1\t909344853\n1\t909345221\n1\t909345222\n12\t909345292\n12\t909345485\n12\t909345510\n1\t909343508\n1\t909343519\n1\t909343567\n1\t909344117\n1\t909344183\n1\t909344185\n10\t909344189\n10\t909344192\n10\t909344193\n10\t909344194\n10\t909344196\n1\t909344197\n10\t909344199\n10\t909344201\n10\t909344257\n1\t909344536\n1\t909344549\n1\t909344698\n1\t909344711\n1\t909343795\n1\t909344628\n1\t909344629\n9\t909343553\n9\t909343992\n9\t909344384\n9\t909344399\n9\t909344487\n9\t909344588\n9\t909344591\n9\t909344593\n9\t909344594\n9\t909344595\n9\t909344596\n9\t909344599\n1\t909343500\n1\t909343832\n1\t909344136\n1\t909345753\n1\t909346197\n1\t909346198\n1\t909346200\n1\t909346211\n1\t909346291\n1\t909346563\n1\t909346575\n1\t909346087\n1\t909346146\n1\t909346192\n1\t909346282\n1\t909346326\n1\t909346386\n1\t909344926\n1\t909344927\n1\t909343404\n1\t909343408\n1\t909346006\n2\t909343393\n1\t909346214\n1\t909343920\n2\t909345955\n3\t909345957\n1\t909346159\n1\t909346332\n1\t909346525\n1\t909344834\n3\t909343391\n1\t909346136\n2\t909346524\n1\t909346526\n1\t909346052\n1\t909346096\n1\t909346187\n1\t909346370\n1\t909345752\n1\t909345954\n1\t909346586\n2\t909345822\n1\t909345823\n1\t909345951\n1\t909346186\n1\t909346188\n1\t909346189\n1\t909346241\n2\t909346364\n1\t909346366\n1\t909346369\n1\t909346371\n1\t909346536\n1\t909346537\n1\t909346581\n1\t909345930\n1\t909345931\n6\t909343392\n1\t909345796\n1\t909346120\n1\t909346142\n1\t909346250\n1\t909346251\n3\t909343477\n3\t909343614\n3\t909345148\n3\t909345150\n3\t909345155\n3\t909345159\n3\t909345160\n3\t909345301\n3\t909345556\n3\t909345655\n3\t909345656\n2\t909346084\n2\t909346085\n2\t909346284\n2\t909346285\n1\t909346373\n1\t909343414\n1\t909343415\n1\t909343416\n1\t909343417\n1\t909343418\n1\t909343419\n1\t909343422\n1\t909343423\n1\t909343424\n1\t909343425\n1\t909343426\n1\t909343427\n1\t909343570\n1\t909344404\n1\t909344405\n1\t909344723\n1\t909344726\n1\t909344729\n1\t909345497\n1\t909345501\n2\t909345660\n1\t909343776\n1\t909343780\n"
+          },
+          {
+            "type": "HTML",
+            "data": "<div class=\"result-alert alert-warning\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Output is truncated</strong> to 1000 rows. Learn more about <strong>zeppelin.spark.maxResult</strong></div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980212_1355920886",
+      "id": "20210121-231609_676683596",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22147"
+    },
+    {
+      "text": "%md\n## Requête 2",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Requête 2</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980213_1584907595",
+      "id": "20210122-005433_1719525404",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22148"
+    },
+    {
+      "text": "%md\nPour un pays donné en paramètre, affichez les évènements qui y ont eu place triés par le nombre de mentions (tri décroissant)\nPermettez une agrégation par jour/mois/année\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour un pays donné en paramètre, affichez les évènements qui y ont eu place triés par le nombre de mentions (tri décroissant)<br/>Permettez une agrégation par jour/mois/année</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980214_1846393367",
+      "id": "20210122-005044_176350655",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22149"
+    },
+    {
+      "text": "//actioncountry text, day int, monthyear int, year int, nummentions int, globaleventid text, PRIMARY KEY ((actioncountry, day, monthyear, year),globaleventid)",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980214_2078279765",
+      "id": "20210122-010603_81470234",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22150"
+    },
+    {
+      "text": "val req2 = spark.read.cassandraFormat(\"table_r2\", \"gdelt\").load()\nreq2.createOrReplaceTempView(\"vue_req2\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980215_1774416263",
+      "id": "20210122-005510_885277610",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22151"
+    },
+    {
+      "text": "z.show(spark.sql(\"\"\"SELECT * FROM vue_req2 WHERE actioncountry=\"US\" ORDER BY nombre_mentions DESC LIMIT 10\"\"\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980215_2008210870",
+      "id": "20210122-005153_379729708",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22152"
+    },
+    {
+      "text": "%md\n## Requête 3",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Requête 3</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980215_166628426",
+      "id": "20210121-232110_200232438",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22153"
+    },
+    {
+      "text": "%md\nPour une source de donnés passée en paramètre, affichez les thèmes, personnes, lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque thème/personne/lieu); permettez une agrégation par jour/mois/année.\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour une source de donnés passée en paramètre, affichez les thèmes, personnes, lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque thème/personne/lieu); permettez une agrégation par jour/mois/année.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980215_134637419",
+      "id": "20210122-005013_1189633366",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22154"
+    },
+    {
+      "text": "%md\n## Themes",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Themes</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980215_500659326",
+      "id": "20210122-005610_2016244241",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22155"
+    },
+    {
+      "text": "val req3_theme = spark.read.cassandraFormat(\"table_r3_theme\", \"gdelt\").load()\nreq3_theme.createOrReplaceTempView(\"vue_req3_theme\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980216_40621029",
+      "id": "20210122-010708_1805086454",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22156"
+    },
+    {
+      "text": "//sourcecommonname text, date2 text, monthyear text, year text, themes3 text, numarticles int, meantone float, PRIMARY KEY ((sourcecommonname, date2, monthyear, year),themes3));\") }",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980216_363045381",
+      "id": "20210122-005907_77064019",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22157"
+    },
+    {
+      "text": "z.show(spark.sql(\"\"\"SELECT sourcecommonname, themes3, numarticles, meantone FROM vue_req3_theme WHERE sourcecommonname = \"nytimes.com\" LIMIT 50\"\"\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980216_209875744",
+      "id": "20210122-005146_590656926",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22158"
+    },
+    {
+      "text": "%md\n## Persons",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Persons</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980216_1485623171",
+      "id": "20210122-005621_1058119533",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22159"
+    },
+    {
+      "text": "//sourcecommonname text, date2 text, monthyear text, year text, persons3 text, numarticles int, meantone float, PRIMARY KEY ((sourcecommonname, date2 , monthyear , year) ,persons3)",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980216_1123068125",
+      "id": "20210122-010436_736495898",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22160"
+    },
+    {
+      "text": "val req3_persons = spark.read.cassandraFormat(\"table_r3_persons\", \"gdelt\").load()\nreq3_persons.createOrReplaceTempView(\"vue_req3_persons\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980217_467682274",
+      "id": "20210122-010911_892489523",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22161"
+    },
+    {
+      "text": "z.show(spark.sql(\"\"\"SELECT src_name, persons_2, nombre_articles, ton_moyen FROM  WHERE src_name = \"ouest-france.fr\" LIMIT 50\"\"\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980217_392648696",
+      "id": "20210122-005803_1707018756",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22162"
+    },
+    {
+      "text": "%md\n## Locations",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Locations</h2>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980217_1896281632",
+      "id": "20210122-005642_648645901",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22163"
+    },
+    {
+      "text": "val req3_locations = spark.read.cassandraFormat(\"table_r3_locations\", \"gdelt\").load()\nreq3_locations.createOrReplaceTempView(\"vue_req3_locations\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980217_1992608458",
+      "id": "20210122-010914_536998604",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22164"
+    },
+    {
+      "text": "//sourcecommonname text, date2 text, monthyear text, year text, locations4 text, numarticles int, meantone float, PRIMARY KEY ((sourcecommonname, date2 , monthyear , year) ,locations4",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980218_1089862882",
+      "id": "20210122-010537_1208498583",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22165"
+    },
+    {
+      "text": "z.show(spark.sql(\"\"\"SELECT src_name, persons_2, nombre_articles, ton_moyen FROM vue_req3_locations WHERE src_name = \"ouest-france.fr\" LIMIT 50\"\"\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:53:00+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611499980218_51923951",
+      "id": "20210122-005647_74371612",
+      "dateCreated": "2021-01-24T15:53:00+0100",
+      "status": "READY",
+      "$$hashKey": "object:22166"
+    }
+  ],
+  "name": "Requetes_EMR",
+  "id": "2FW9D872T",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Requetes_EMR"
+}

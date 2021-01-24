@@ -1,0 +1,1072 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Requête 1",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Requête 1</h1>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062621_696088580",
+      "id": "20210121-231554_362422895",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:26263"
+    },
+    {
+      "text": "%md\nAfficher le nombre d’articles/événements qui parlent de COVID qu’il y a eu pour chaque triplet :\nJour (de publication de l'article)\npays de l’évènement\nlangue de l’article",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Afficher le nombre d’articles/événements qui parlent de COVID qu’il y a eu pour chaque triplet :<br/>Jour (de publication de l&rsquo;article)<br/>pays de l’évènement<br/>langue de l’article</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062621_740068701",
+      "id": "20210122-005025_2010637590",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26264"
+    },
+    {
+      "text": "//(globaleventid text, day text, actioncountry text, language text, numarticles int, \n//PRIMARY KEY ((day, actioncountry, language),globaleventid));\") }",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062622_675336235",
+      "id": "20210122-021907_2035525866",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26265"
+    },
+    {
+      "text": "%cassandra\nSELECT * FROM table_r1;",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "day",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "actioncountry",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "language",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "globaleventid",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "numarticles",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 0,
+                          "direction": "desc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "day": "string",
+                      "actioncountry": "string",
+                      "language": "string",
+                      "globaleventid": "string",
+                      "numarticles": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "day\tactioncountry\tlanguage\tglobaleventid\tnumarticles\n20200301\t\teng\t909344834\t1\n20200131\tUS\teng\t909343405\t1\n20200131\tUS\teng\t909343407\t1\n20190302\tIR\teng\t909343390\t1\n20200301\tIT\tfra\t909346211\t1\n20200301\tIT\tfra\t909346291\t1\n20200301\tIT\tfra\t909346563\t1\n20200301\tIT\tfra\t909346575\t1\n20200301\tEZ\teng\t909343523\t1\n20200301\tEZ\teng\t909343524\t1\n20200301\tEZ\teng\t909344112\t1\n20200301\tEZ\teng\t909344113\t1\n20200301\tEZ\teng\t909344114\t1\n20200301\tEZ\teng\t909344115\t1\n20200301\tEZ\teng\t909344118\t1\n20200301\tEZ\teng\t909344119\t1\n20200301\tEZ\teng\t909344121\t1\n20200301\tEZ\teng\t909344122\t1\n20200301\tEZ\teng\t909344186\t1\n20200301\tEZ\teng\t909344187\t1\n20200301\tEZ\teng\t909344309\t1\n20200301\tEZ\teng\t909344390\t1\n20200301\tEZ\teng\t909344526\t1\n20200301\tEZ\teng\t909344527\t1\n20200131\tJA\teng\t909343406\t1\n20200301\tFR\tpol\t909346087\t1\n20200301\tFR\tpol\t909346146\t1\n20200301\tFR\tpol\t909346192\t1\n20200301\tFR\tpol\t909346282\t1\n20200301\tFR\tpol\t909346326\t1\n20200301\tFR\tpol\t909346386\t1\n20200301\tGR\teng\t909344518\t1\n20200301\tGR\teng\t909344519\t1\n20200301\tGR\teng\t909344694\t1\n20200301\t\trus\t909346344\t1\n20200301\t\trus\t909346347\t1\n20200301\tFR\tspa\t909345930\t1\n20200301\tFR\tspa\t909345931\t1\n20190302\tKS\teng\t909343392\t6\n20190302\tIT\teng\t909343391\t3\n20200301\t\tspa\t909345796\t1\n20200301\t\tspa\t909346120\t1\n20200301\t\tspa\t909346142\t1\n20200301\t\tspa\t909346250\t1\n20200301\t\tspa\t909346251\t1\n20200301\tBR\tspa\t909345925\t3\n20200301\tBR\tspa\t909345932\t1\n20200301\tBR\tspa\t909346079\t3\n20200301\tSF\teng\t909344926\t1\n20200301\tSF\teng\t909344927\t1\n20200301\tUP\teng\t909343477\t3\n20200301\tUP\teng\t909343614\t3\n20200301\tUP\teng\t909345148\t3\n20200301\tUP\teng\t909345150\t3\n20200301\tUP\teng\t909345155\t3\n20200301\tUP\teng\t909345159\t3\n20200301\tUP\teng\t909345160\t3\n20200301\tUP\teng\t909345301\t3\n20200301\tUP\teng\t909345556\t3\n20200301\tUP\teng\t909345655\t3\n20200301\tUP\teng\t909345656\t3\n20200301\tFR\tpor\t909346084\t2\n20200301\tFR\tpor\t909346085\t2\n20200301\tFR\tpor\t909346284\t2\n20200301\tFR\tpor\t909346285\t2\n20200131\tCH\teng\t909343404\t1\n20200131\tCH\teng\t909343408\t1\n20200301\tPM\tspa\t909346006\t1\n20200301\tKS\teng\t909343505\t1\n20200301\tKS\teng\t909343820\t2\n20200301\tKS\teng\t909344315\t1\n20200301\tKS\teng\t909344400\t1\n20200301\tKS\teng\t909344402\t1\n20200301\tKS\teng\t909344406\t1\n20200301\tKS\teng\t909344407\t1\n20200301\tKS\teng\t909344409\t1\n20200301\tKS\teng\t909344449\t2\n20200301\tKS\teng\t909344450\t2\n20200301\tKS\teng\t909344465\t1\n20200301\tKS\teng\t909344466\t1\n20200301\tKS\teng\t909344651\t2\n20200301\tKS\teng\t909344703\t1\n20200301\tKS\teng\t909344704\t3\n20200301\tKS\teng\t909344706\t1\n20200301\tKS\teng\t909344708\t1\n20200301\tKS\teng\t909344742\t1\n20200301\tKS\teng\t909344747\t1\n20200301\tKS\teng\t909344748\t1\n20200301\tKS\teng\t909344749\t1\n20200301\tKS\teng\t909344751\t1\n20200301\tKS\teng\t909344753\t2\n20200301\tKS\teng\t909344755\t1\n20200301\tKS\teng\t909344756\t1\n20200301\tKS\teng\t909344757\t1\n20200301\tKS\teng\t909344758\t1\n20200301\tKS\teng\t909344760\t3\n20200301\tKS\teng\t909344761\t10\n20200301\tKS\teng\t909344764\t1\n20200301\tKS\teng\t909344872\t1\n20200301\tKS\teng\t909345026\t1\n20200301\tKS\teng\t909345050\t1\n20200301\tKS\teng\t909345051\t1\n20200301\tKS\teng\t909345397\t1\n20200301\tKS\teng\t909345432\t1\n20200301\tKS\teng\t909345435\t1\n20200301\tKS\teng\t909345500\t3\n20200301\tKS\teng\t909345503\t10\n20200301\tKS\teng\t909345505\t1\n20200301\tKS\teng\t909345506\t1\n20200301\tKS\teng\t909345507\t1\n20200301\tKS\teng\t909345653\t1\n20200301\tCH\tspa\t909343460\t1\n20200301\tCH\tspa\t909343920\t1\n20200301\tCH\tspa\t909346138\t1\n20200301\tCH\tspa\t909346161\t1\n20200301\tCH\tspa\t909346372\t1\n20200301\tIR\trus\t909346158\t1\n20200301\tGH\teng\t909344302\t1\n20200301\tGH\teng\t909344643\t1\n20200301\tKU\teng\t909344766\t1\n20190302\tUS\teng\t909343393\t2\n20200301\tUP\trus\t909346136\t1\n20200301\tUP\trus\t909346524\t2\n20200301\tUP\trus\t909346526\t1\n20200301\tJA\trus\t909345762\t1\n20200301\tJA\trus\t909345992\t1\n20200301\tJA\trus\t909345995\t1\n20200301\tQA\teng\t909344658\t1\n20200301\tQA\teng\t909345029\t1\n20200301\tFR\teng\t909343781\t12\n20200301\tFR\teng\t909343782\t12\n20200301\tFR\teng\t909343784\t10\n20200301\tFR\teng\t909343798\t12\n20200301\tFR\teng\t909343800\t12\n20200301\tFR\teng\t909343801\t10\n20200301\tFR\teng\t909344234\t1\n20200301\tFR\teng\t909344671\t12\n20200301\tFR\teng\t909344672\t12\n20200301\tFR\teng\t909344674\t10\n20200301\tFR\teng\t909344692\t1\n20200301\tFR\teng\t909344823\t12\n20200301\tFR\teng\t909344824\t10\n20200301\tFR\teng\t909344825\t12\n20200301\tFR\teng\t909344861\t10\n20200301\tFR\teng\t909344862\t12\n20200301\tFR\teng\t909344863\t12\n20200301\tFR\teng\t909344968\t10\n20200301\tFR\teng\t909344969\t12\n20200301\tFR\teng\t909344970\t12\n20200301\tFR\teng\t909345039\t1\n20200301\tJA\tspa\t909346373\t1\n20200301\tSP\tspa\t909346052\t1\n20200301\tSP\tspa\t909346096\t1\n20200301\tSP\tspa\t909346187\t1\n20200301\tSP\tspa\t909346370\t1\n20200301\tIZ\teng\t909345027\t1\n20200301\tIT\teng\t909343525\t1\n20200301\tIT\teng\t909343558\t1\n20200301\tIT\teng\t909343559\t1\n20200301\tIT\teng\t909343560\t2\n20200301\tIT\teng\t909343561\t1\n20200301\tIT\teng\t909343563\t1\n20200301\tIT\teng\t909343564\t2\n20200301\tIT\teng\t909343565\t2\n20200301\tIT\teng\t909343566\t1\n20200301\tIT\teng\t909343804\t1\n20200301\tIT\teng\t909343805\t1\n20200301\tIT\teng\t909344057\t1\n20200301\tIT\teng\t909344116\t1\n20200301\tIT\teng\t909344188\t1\n20200301\tIT\teng\t909344223\t1\n20200301\tIT\teng\t909344225\t1\n20200301\tIT\teng\t909344233\t1\n20200301\tIT\teng\t909344235\t1\n20200301\tIT\teng\t909344271\t2\n20200301\tIT\teng\t909344401\t1\n20200301\tIT\teng\t909344408\t1\n20200301\tIT\teng\t909344410\t1\n20200301\tIT\teng\t909344446\t1\n20200301\tIT\teng\t909344504\t1\n20200301\tIT\teng\t909344505\t1\n20200301\tIT\teng\t909344520\t1\n20200301\tIT\teng\t909344535\t1\n20200301\tIT\teng\t909344548\t1\n20200301\tIT\teng\t909344592\t2\n20200301\tIT\teng\t909344648\t12\n20200301\tIT\teng\t909344653\t12\n20200301\tIT\teng\t909344654\t12\n20200301\tIT\teng\t909344684\t1\n20200301\tIT\teng\t909344685\t2\n20200301\tIT\teng\t909344686\t1\n20200301\tIT\teng\t909344687\t1\n20200301\tIT\teng\t909344688\t1\n20200301\tIT\teng\t909344691\t1\n20200301\tIT\teng\t909344693\t1\n20200301\tIT\teng\t909344695\t1\n20200301\tIT\teng\t909344696\t1\n20200301\tIT\teng\t909344697\t1\n20200301\tIT\teng\t909344699\t1\n20200301\tIT\teng\t909344700\t1\n20200301\tIT\teng\t909344707\t1\n20200301\tIT\teng\t909344709\t1\n20200301\tIT\teng\t909344710\t1\n20200301\tIT\teng\t909344712\t1\n20200301\tIT\teng\t909344713\t1\n20200301\tIT\teng\t909344750\t1\n20200301\tIT\teng\t909344752\t1\n20200301\tIT\teng\t909344853\t1\n20200301\tIT\teng\t909345221\t1\n20200301\tIT\teng\t909345222\t1\n20200301\tIT\teng\t909345292\t12\n20200301\tIT\teng\t909345485\t12\n20200301\tIT\teng\t909345510\t12\n20200301\tCO\tspa\t909346018\t1\n20200223\tUS\teng\t909343414\t1\n20200223\tUS\teng\t909343415\t1\n20200223\tUS\teng\t909343416\t1\n20200223\tUS\teng\t909343417\t1\n20200223\tUS\teng\t909343418\t1\n20200223\tUS\teng\t909343419\t1\n20200223\tUS\teng\t909343422\t1\n20200223\tUS\teng\t909343423\t1\n20200223\tUS\teng\t909343424\t1\n20200223\tUS\teng\t909343425\t1\n20200223\tUS\teng\t909343426\t1\n20200223\tUS\teng\t909343427\t1\n20200301\tJA\teng\t909343570\t1\n20200301\tJA\teng\t909344404\t1\n20200301\tJA\teng\t909344405\t1\n20200301\tJA\teng\t909344723\t1\n20200301\tJA\teng\t909344726\t1\n20200301\tJA\teng\t909344729\t1\n20200301\tJA\teng\t909345497\t1\n20200301\tJA\teng\t909345501\t1\n20200301\tJA\teng\t909345660\t2\n20200301\tBE\tspa\t909343444\t1\n20200301\tBE\tspa\t909343786\t1\n20200301\tBE\tspa\t909346148\t1\n20200301\tBO\trus\t909346199\t1\n20200301\tCA\teng\t909343451\t1\n20200301\tCA\teng\t909343452\t1\n20200301\tCA\teng\t909343459\t1\n20200301\tCA\teng\t909343544\t1\n20200301\tCA\teng\t909343864\t1\n20200301\tCA\teng\t909343870\t1\n20200301\tCA\teng\t909343871\t1\n20200301\tCA\teng\t909343874\t1\n20200301\tCA\teng\t909343875\t1\n20200301\tCA\teng\t909343879\t1\n20200301\tCA\teng\t909343880\t1\n20200301\tCA\teng\t909343891\t1\n20200301\tCA\teng\t909343893\t1\n20200301\tCA\teng\t909343895\t1\n20200301\tCA\teng\t909343896\t1\n20200301\tCA\teng\t909343898\t4\n20200301\tCA\teng\t909343910\t1\n20200301\tCA\teng\t909343914\t1\n20200301\tCA\teng\t909343925\t1\n20200301\tCA\teng\t909343926\t1\n20200301\tCA\teng\t909343927\t1\n20200301\tCA\teng\t909343930\t1\n20200301\tCA\teng\t909344495\t4\n20200301\tCA\teng\t909344531\t1\n20200301\tCA\teng\t909344615\t1\n20200301\tCA\teng\t909344616\t1\n20200301\tCA\teng\t909344618\t1\n20200301\tCA\teng\t909344620\t1\n20200301\tCA\teng\t909344630\t1\n20200301\tCA\teng\t909344662\t1\n20200301\tCA\teng\t909344663\t1\n20200301\tCA\teng\t909345377\t1\n20200301\tCA\teng\t909345472\t1\n20200301\tCA\teng\t909345473\t1\n20200301\tVE\tspa\t909345860\t1\n20200301\tUS\tfra\t909345819\t1\n20200301\tUS\tfra\t909346334\t1\n20200301\tUS\tfra\t909346555\t1\n20200301\tUS\tfra\t909346556\t1\n20200301\tUS\tfra\t909346558\t1\n20200301\tCI\tspa\t909345752\t1\n20200301\tCI\tspa\t909345954\t1\n20200301\tCI\tspa\t909346586\t1\n20200301\tMX\tspa\t909345822\t2\n20200301\tMX\tspa\t909345823\t1\n20200301\tMX\tspa\t909345951\t1\n20200301\tMX\tspa\t909346186\t1\n20200301\tMX\tspa\t909346188\t1\n20200301\tMX\tspa\t909346189\t1\n20200301\tMX\tspa\t909346241\t1\n20200301\tMX\tspa\t909346364\t2\n20200301\tMX\tspa\t909346366\t1\n20200301\tMX\tspa\t909346369\t1\n20200301\tMX\tspa\t909346371\t1\n20200301\tMX\tspa\t909346536\t1\n20200301\tMX\tspa\t909346537\t1\n20200301\tMX\tspa\t909346581\t1\n20200301\tIT\tpor\t909343559\t1\n20200301\tIT\tpor\t909344687\t1\n20200301\tIT\tpor\t909345810\t1\n20200301\tIT\tpor\t909346099\t2\n20200301\tIT\tpor\t909346216\t1\n20200301\tIT\tpor\t909346584\t1\n20200301\tIT\tpor\t909346585\t1\n20200301\tIR\teng\t909343453\t1\n20200301\tIR\teng\t909343458\t1\n20200301\tIR\teng\t909343467\t7\n20200301\tIR\teng\t909343547\t7\n20200301\tIR\teng\t909343554\t7\n20200301\tIR\teng\t909343555\t1\n20200301\tIR\teng\t909343556\t1\n20200301\tIR\teng\t909343557\t7\n20200301\tIR\teng\t909343777\t1\n20200301\tIR\teng\t909343778\t1\n20200301\tIR\teng\t909343779\t1\n20200301\tIR\teng\t909343783\t2\n20200301\tIR\teng\t909343796\t1\n20200301\tIR\teng\t909343799\t2\n20200301\tIR\teng\t909343811\t7\n20200301\tIR\teng\t909343838\t2\n20200301\tIR\teng\t909343840\t2\n20200301\tIR\teng\t909343844\t7\n20200301\tIR\teng\t909343845\t7\n20200301\tIR\teng\t909343857\t6\n20200301\tIR\teng\t909343858\t6\n20200301\tIR\teng\t909343861\t6\n20200301\tIR\teng\t909343869\t1\n20200301\tIR\teng\t909343872\t1\n20200301\tIR\teng\t909343889\t1\n20200301\tIR\teng\t909343890\t4\n20200301\tIR\teng\t909343892\t1\n20200301\tIR\teng\t909343894\t1\n20200301\tIR\teng\t909343897\t1\n20200301\tIR\teng\t909343901\t4\n20200301\tIR\teng\t909343902\t1\n20200301\tIR\teng\t909343959\t7\n20200301\tIR\teng\t909343997\t10\n20200301\tIR\teng\t909343998\t10\n20200301\tIR\teng\t909344064\t1\n20200301\tIR\teng\t909344065\t1\n20200301\tIR\teng\t909344120\t1\n20200301\tIR\teng\t909344123\t1\n20200301\tIR\teng\t909344135\t1\n20200301\tIR\teng\t909344167\t1\n20200301\tIR\teng\t909344253\t7\n20200301\tIR\teng\t909344270\t7\n20200301\tIR\teng\t909344273\t7\n20200301\tIR\teng\t909344274\t7\n20200301\tIR\teng\t909344275\t7\n20200301\tIR\teng\t909344276\t7\n20200301\tIR\teng\t909344277\t7\n20200301\tIR\teng\t909344278\t7\n20200301\tIR\teng\t909344279\t7\n20200301\tIR\teng\t909344280\t4\n20200301\tIR\teng\t909344283\t4\n20200301\tIR\teng\t909344286\t1\n20200301\tIR\teng\t909344297\t7\n20200301\tIR\teng\t909344300\t7\n20200301\tIR\teng\t909344303\t1\n20200301\tIR\teng\t909344311\t7\n20200301\tIR\teng\t909344489\t1\n20200301\tIR\teng\t909344497\t1\n20200301\tIR\teng\t909344502\t1\n20200301\tIR\teng\t909344542\t1\n20200301\tIR\teng\t909344554\t1\n20200301\tIR\teng\t909344600\t1\n20200301\tIR\teng\t909344601\t1\n20200301\tIR\teng\t909344603\t2\n20200301\tIR\teng\t909344604\t1\n20200301\tIR\teng\t909344606\t2\n20200301\tIR\teng\t909344608\t2\n20200301\tIR\teng\t909344610\t2\n20200301\tIR\teng\t909344611\t4\n20200301\tIR\teng\t909344613\t1\n20200301\tIR\teng\t909344617\t1\n20200301\tIR\teng\t909344619\t1\n20200301\tIR\teng\t909344621\t4\n20200301\tIR\teng\t909344622\t1\n20200301\tIR\teng\t909344623\t1\n20200301\tIR\teng\t909344624\t4\n20200301\tIR\teng\t909344627\t1\n20200301\tIR\teng\t909344631\t1\n20200301\tIR\teng\t909344632\t1\n20200301\tIR\teng\t909344634\t10\n20200301\tIR\teng\t909344635\t4\n20200301\tIR\teng\t909344638\t1\n20200301\tIR\teng\t909344640\t4\n20200301\tIR\teng\t909344642\t7\n20200301\tIR\teng\t909344644\t1\n20200301\tIR\teng\t909344645\t1\n20200301\tIR\teng\t909344646\t4\n20200301\tIR\teng\t909344647\t7\n20200301\tIR\teng\t909344655\t2\n20200301\tIR\teng\t909344657\t2\n20200301\tIR\teng\t909344660\t2\n20200301\tIR\teng\t909344664\t4\n20200301\tIR\teng\t909344665\t2\n20200301\tIR\teng\t909344668\t7\n20200301\tIR\teng\t909344670\t7\n20200301\tIR\teng\t909344673\t2\n20200301\tIR\teng\t909344702\t1\n20200301\tIR\teng\t909344705\t1\n20200301\tIR\teng\t909344822\t2\n20200301\tIR\teng\t909344827\t1\n20200301\tIR\teng\t909344860\t2\n20200301\tIR\teng\t909344967\t2\n20200301\tIR\teng\t909345023\t2\n20200301\tIR\teng\t909345024\t12\n20200301\tIR\teng\t909345028\t1\n20200301\tIR\teng\t909345045\t1\n20200301\tIR\teng\t909345046\t1\n20200301\tIR\teng\t909345047\t1\n20200301\tIR\teng\t909345049\t1\n20200301\tIR\teng\t909345380\t1\n20200301\tIR\teng\t909345469\t1\n20200301\tIR\teng\t909345474\t4\n20200301\tIR\teng\t909345477\t10\n20200301\tIR\teng\t909345479\t12\n20200301\tIR\teng\t909345482\t6\n20200301\tIR\teng\t909345484\t10\n20200301\tIR\teng\t909345495\t6\n20200301\tIR\teng\t909345496\t6\n20200301\tIR\teng\t909345509\t10\n20200301\tIR\teng\t909345642\t6\n20200301\tNZ\teng\t909344367\t1\n20200301\tNZ\teng\t909344963\t1\n20200301\tAS\teng\t909343776\t1\n20200301\tAS\teng\t909343780\t1\n20200301\tRS\teng\t909345048\t1\n20200301\tHK\tpol\t909346583\t1\n20200301\tUS\tspa\t909345291\t1\n20200301\tUS\tspa\t909345369\t1\n20200301\tUS\tspa\t909345639\t1\n20200301\tUS\tspa\t909345803\t1\n20200301\tUS\tspa\t909345804\t1\n20200301\tUS\tspa\t909345855\t1\n20200301\tUS\tspa\t909345859\t1\n20200301\tUS\tspa\t909345949\t1\n20200301\tUS\tspa\t909345950\t1\n20200301\tUS\tspa\t909346162\t1\n20200301\tUS\tspa\t909346174\t1\n20200301\tUS\tspa\t909346190\t1\n20200301\tUS\tspa\t909346210\t1\n20200301\tUS\tspa\t909346248\t1\n20200301\tUS\tspa\t909346249\t1\n20200301\tUS\tspa\t909346254\t1\n20200301\tUS\tspa\t909346264\t1\n20200301\tUS\tspa\t909346289\t1\n20200301\tUS\tspa\t909346293\t1\n20200301\tUS\tspa\t909346321\t1\n20200301\tUS\tspa\t909346323\t1\n20200301\tUS\tspa\t909346324\t1\n20200301\tUS\tspa\t909346367\t1\n20200301\tUS\tspa\t909346368\t1\n20200301\tUS\tspa\t909346374\t1\n20200301\tUS\tspa\t909346532\t1\n20200301\tUS\tspa\t909346553\t1\n20200301\tUS\tspa\t909346561\t1\n20200301\tUS\tspa\t909346565\t1\n20200301\tUS\tspa\t909346566\t1\n20200301\tUS\tspa\t909346567\t1\n20200301\tUS\tspa\t909346570\t1\n20200301\tUS\tspa\t909346576\t1\n20200301\tUS\tspa\t909346578\t1\n20200301\tNL\tfra\t909345798\t1\n20200301\tNL\tfra\t909345974\t1\n20200301\tNL\tfra\t909345983\t1\n20200301\tNL\tfra\t909346390\t1\n20200301\tCH\tpol\t909346125\t1\n20200301\tUS\tukr\t909346214\t1\n20200301\tCH\trus\t909343920\t1\n20200301\tCH\trus\t909345955\t2\n20200301\tCH\trus\t909345957\t3\n20200301\tCH\trus\t909346159\t1\n20200301\tCH\trus\t909346332\t1\n20200301\tCH\trus\t909346525\t1\n20200301\tNI\teng\t909343562\t1\n20200301\tNI\teng\t909343592\t1\n20200301\tNI\teng\t909344770\t1\n20200301\tNI\teng\t909344910\t1\n20200301\tNI\teng\t909344913\t1\n20200301\tNI\teng\t909344914\t1\n20200301\tNI\teng\t909344921\t2\n20200301\tNI\teng\t909344925\t1\n20200301\tSP\teng\t909343508\t1\n20200301\tSP\teng\t909343519\t1\n20200301\tSP\teng\t909343567\t1\n20200301\tSP\teng\t909344117\t1\n20200301\tSP\teng\t909344183\t1\n20200301\tSP\teng\t909344185\t1\n20200301\tSP\teng\t909344189\t10\n20200301\tSP\teng\t909344192\t10\n20200301\tSP\teng\t909344193\t10\n20200301\tSP\teng\t909344194\t10\n20200301\tSP\teng\t909344196\t10\n20200301\tSP\teng\t909344197\t1\n20200301\tSP\teng\t909344199\t10\n20200301\tSP\teng\t909344201\t10\n20200301\tSP\teng\t909344257\t10\n20200301\tSP\teng\t909344536\t1\n20200301\tSP\teng\t909344549\t1\n20200301\tSP\teng\t909344698\t1\n20200301\tSP\teng\t909344711\t1\n20200301\tCH\teng\t909343460\t2\n20200301\tCH\teng\t909343461\t9\n20200301\tCH\teng\t909343462\t1\n20200301\tCH\teng\t909343569\t1\n20200301\tCH\teng\t909343774\t1\n20200301\tCH\teng\t909343775\t1\n20200301\tCH\teng\t909343806\t1\n20200301\tCH\teng\t909343827\t2\n20200301\tCH\teng\t909343917\t1\n20200301\tCH\teng\t909343918\t9\n20200301\tCH\teng\t909343919\t1\n20200301\tCH\teng\t909343920\t2\n20200301\tCH\teng\t909343923\t1\n20200301\tCH\teng\t909343924\t1\n20200301\tCH\teng\t909343928\t1\n20200301\tCH\teng\t909343929\t1\n20200301\tCH\teng\t909343931\t1\n20200301\tCH\teng\t909343932\t1\n20200301\tCH\teng\t909343933\t1\n20200301\tCH\teng\t909344002\t1\n20200301\tCH\teng\t909344058\t1\n20200301\tCH\teng\t909344148\t1\n20200301\tCH\teng\t909344149\t1\n20200301\tCH\teng\t909344152\t1\n20200301\tCH\teng\t909344153\t1\n20200301\tCH\teng\t909344154\t1\n20200301\tCH\teng\t909344155\t1\n20200301\tCH\teng\t909344306\t2\n20200301\tCH\teng\t909344366\t1\n20200301\tCH\teng\t909344375\t1\n20200301\tCH\teng\t909344383\t1\n20200301\tCH\teng\t909344403\t1\n20200301\tCH\teng\t909344440\t6\n20200301\tCH\teng\t909344441\t6\n20200301\tCH\teng\t909344458\t6\n20200301\tCH\teng\t909344490\t1\n20200301\tCH\teng\t909344626\t1\n20200301\tCH\teng\t909344722\t1\n20200301\tCH\teng\t909344724\t1\n20200301\tCH\teng\t909344727\t1\n20200301\tCH\teng\t909344728\t1\n20200301\tCH\teng\t909344744\t1\n20200301\tCH\teng\t909344745\t1\n20200301\tCH\teng\t909345163\t2\n20200301\tCH\teng\t909345208\t1\n20200301\tCH\teng\t909345212\t1\n20200301\tCH\teng\t909345262\t1\n20200301\tCH\teng\t909345370\t1\n20200301\tCH\teng\t909345478\t2\n20200301\tCH\teng\t909345481\t6\n20200301\tCH\teng\t909345483\t2\n20200301\tCH\teng\t909345508\t2\n20200301\tCH\teng\t909345528\t1\n20200301\tUS\teng\t909343446\t5\n20200301\tUS\teng\t909343447\t1\n20200301\tUS\teng\t909343448\t10\n20200301\tUS\teng\t909343475\t1\n20200301\tUS\teng\t909343476\t1\n20200301\tUS\teng\t909343478\t4\n20200301\tUS\teng\t909343479\t1\n20200301\tUS\teng\t909343480\t1\n20200301\tUS\teng\t909343481\t3\n20200301\tUS\teng\t909343483\t4\n20200301\tUS\teng\t909343485\t1\n20200301\tUS\teng\t909343487\t1\n20200301\tUS\teng\t909343488\t1\n20200301\tUS\teng\t909343490\t10\n20200301\tUS\teng\t909343491\t1\n20200301\tUS\teng\t909343492\t1\n20200301\tUS\teng\t909343494\t1\n20200301\tUS\teng\t909343529\t1\n20200301\tUS\teng\t909343531\t1\n20200301\tUS\teng\t909343538\t3\n20200301\tUS\teng\t909343577\t1\n20200301\tUS\teng\t909343589\t1\n20200301\tUS\teng\t909343613\t3\n20200301\tUS\teng\t909343616\t1\n20200301\tUS\teng\t909343618\t1\n20200301\tUS\teng\t909343623\t1\n20200301\tUS\teng\t909343627\t3\n20200301\tUS\teng\t909343628\t1\n20200301\tUS\teng\t909343631\t1\n20200301\tUS\teng\t909343633\t1\n20200301\tUS\teng\t909343637\t1\n20200301\tUS\teng\t909343650\t1\n20200301\tUS\teng\t909343652\t3\n20200301\tUS\teng\t909343653\t1\n20200301\tUS\teng\t909343658\t3\n20200301\tUS\teng\t909343659\t1\n20200301\tUS\teng\t909343660\t2\n20200301\tUS\teng\t909343661\t3\n20200301\tUS\teng\t909343664\t1\n20200301\tUS\teng\t909343670\t1\n20200301\tUS\teng\t909343671\t1\n20200301\tUS\teng\t909343672\t1\n20200301\tUS\teng\t909343673\t1\n20200301\tUS\teng\t909343674\t1\n20200301\tUS\teng\t909343675\t3\n20200301\tUS\teng\t909343813\t11\n20200301\tUS\teng\t909343814\t5\n20200301\tUS\teng\t909343815\t1\n20200301\tUS\teng\t909343816\t10\n20200301\tUS\teng\t909343817\t1\n20200301\tUS\teng\t909343819\t5\n20200301\tUS\teng\t909343825\t1\n20200301\tUS\teng\t909343835\t2\n20200301\tUS\teng\t909343836\t1\n20200301\tUS\teng\t909343837\t2\n20200301\tUS\teng\t909343849\t6\n20200301\tUS\teng\t909343850\t9\n20200301\tUS\teng\t909343851\t1\n20200301\tUS\teng\t909343852\t6\n20200301\tUS\teng\t909343854\t9\n20200301\tUS\teng\t909343856\t6\n20200301\tUS\teng\t909343859\t6\n20200301\tUS\teng\t909343860\t11\n20200301\tUS\teng\t909343899\t1\n20200301\tUS\teng\t909343900\t3\n20200301\tUS\teng\t909344023\t3\n20200301\tUS\teng\t909344034\t1\n20200301\tUS\teng\t909344138\t1\n20200301\tUS\teng\t909344140\t1\n20200301\tUS\teng\t909344150\t1\n20200301\tUS\teng\t909344151\t1\n20200301\tUS\teng\t909344159\t1\n20200301\tUS\teng\t909344160\t4\n20200301\tUS\teng\t909344161\t1\n20200301\tUS\teng\t909344162\t9\n20200301\tUS\teng\t909344177\t1\n20200301\tUS\teng\t909344178\t1\n20200301\tUS\teng\t909344268\t1\n20200301\tUS\teng\t909344282\t4\n20200301\tUS\teng\t909344313\t1\n20200301\tUS\teng\t909344314\t2\n20200301\tUS\teng\t909344320\t6\n20200301\tUS\teng\t909344321\t3\n20200301\tUS\teng\t909344322\t6\n20200301\tUS\teng\t909344325\t1\n20200301\tUS\teng\t909344333\t1\n20200301\tUS\teng\t909344344\t7\n20200301\tUS\teng\t909344349\t2\n20200301\tUS\teng\t909344352\t1\n20200301\tUS\teng\t909344365\t4\n20200301\tUS\teng\t909344386\t1\n20200301\tUS\teng\t909344387\t1\n20200301\tUS\teng\t909344395\t2\n20200301\tUS\teng\t909344442\t1\n20200301\tUS\teng\t909344443\t1\n20200301\tUS\teng\t909344444\t2\n20200301\tUS\teng\t909344445\t1\n20200301\tUS\teng\t909344451\t3\n20200301\tUS\teng\t909344452\t6\n20200301\tUS\teng\t909344453\t3\n20200301\tUS\teng\t909344454\t6\n20200301\tUS\teng\t909344455\t5\n20200301\tUS\teng\t909344456\t6\n20200301\tUS\teng\t909344457\t6\n20200301\tUS\teng\t909344464\t1\n20200301\tUS\teng\t909344467\t1\n20200301\tUS\teng\t909344475\t4\n20200301\tUS\teng\t909344477\t1\n20200301\tUS\teng\t909344478\t1\n20200301\tUS\teng\t909344491\t1\n20200301\tUS\teng\t909344492\t1\n20200301\tUS\teng\t909344496\t4\n20200301\tUS\teng\t909344498\t4\n20200301\tUS\teng\t909344499\t3\n20200301\tUS\teng\t909344500\t1\n20200301\tUS\teng\t909344501\t1\n20200301\tUS\teng\t909344503\t1\n20200301\tUS\teng\t909344506\t1\n20200301\tUS\teng\t909344507\t10\n20200301\tUS\teng\t909344508\t3\n20200301\tUS\teng\t909344509\t3\n20200301\tUS\teng\t909344510\t6\n20200301\tUS\teng\t909344511\t6\n20200301\tUS\teng\t909344512\t1\n20200301\tUS\teng\t909344513\t9\n20200301\tUS\teng\t909344534\t1\n20200301\tUS\teng\t909344553\t1\n20200301\tUS\teng\t909344607\t2\n20200301\tUS\teng\t909344649\t2\n20200301\tUS\teng\t909344650\t2\n20200301\tUS\teng\t909344652\t2\n20200301\tUS\teng\t909344656\t2\n20200301\tUS\teng\t909344659\t2\n20200301\tUS\teng\t909344661\t2\n20200301\tUS\teng\t909344701\t5\n20200301\tUS\teng\t909344725\t1\n20200301\tUS\teng\t909344741\t1\n20200301\tUS\teng\t909344746\t1\n20200301\tUS\teng\t909344754\t2\n20200301\tUS\teng\t909344759\t3\n20200301\tUS\teng\t909344762\t1\n20200301\tUS\teng\t909344763\t9\n20200301\tUS\teng\t909344769\t3\n20200301\tUS\teng\t909344772\t9\n20200301\tUS\teng\t909344773\t1\n20200301\tUS\teng\t909344774\t5\n20200301\tUS\teng\t909344775\t1\n20200301\tUS\teng\t909344776\t9\n20200301\tUS\teng\t909344777\t1\n20200301\tUS\teng\t909344778\t6\n20200301\tUS\teng\t909344779\t6\n20200301\tUS\teng\t909344804\t1\n20200301\tUS\teng\t909344808\t1\n20200301\tUS\teng\t909344836\t1\n20200301\tUS\teng\t909344837\t1\n20200301\tUS\teng\t909344840\t1\n20200301\tUS\teng\t909344849\t1\n20200301\tUS\teng\t909344983\t1\n20200301\tUS\teng\t909345000\t1\n20200301\tUS\teng\t909345007\t1\n20200301\tUS\teng\t909345149\t3\n20200301\tUS\teng\t909345167\t1\n20200301\tUS\teng\t909345168\t1\n20200301\tUS\teng\t909345171\t3\n20200301\tUS\teng\t909345181\t1\n20200301\tUS\teng\t909345184\t4\n20200301\tUS\teng\t909345186\t1\n20200301\tUS\teng\t909345190\t2\n20200301\tUS\teng\t909345192\t4\n20200301\tUS\teng\t909345196\t1\n20200301\tUS\teng\t909345197\t1\n20200301\tUS\teng\t909345200\t1\n20200301\tUS\teng\t909345202\t4\n20200301\tUS\teng\t909345211\t1\n20200301\tUS\teng\t909345215\t3\n20200301\tUS\teng\t909345217\t1\n20200301\tUS\teng\t909345223\t1\n20200301\tUS\teng\t909345228\t1\n20200301\tUS\teng\t909345229\t3\n20200301\tUS\teng\t909345230\t3\n20200301\tUS\teng\t909345232\t1\n20200301\tUS\teng\t909345237\t4\n20200301\tUS\teng\t909345238\t1\n20200301\tUS\teng\t909345245\t1\n20200301\tUS\teng\t909345249\t1\n20200301\tUS\teng\t909345252\t1\n20200301\tUS\teng\t909345263\t1\n20200301\tUS\teng\t909345267\t1\n20200301\tUS\teng\t909345270\t4\n20200301\tUS\teng\t909345271\t5\n20200301\tUS\teng\t909345276\t1\n20200301\tUS\teng\t909345277\t1\n20200301\tUS\teng\t909345279\t3\n20200301\tUS\teng\t909345281\t4\n20200301\tUS\teng\t909345286\t1\n20200301\tUS\teng\t909345290\t1\n20200301\tUS\teng\t909345291\t12\n20200301\tUS\teng\t909345296\t4\n20200301\tUS\teng\t909345297\t1\n20200301\tUS\teng\t909345298\t1\n20200301\tUS\teng\t909345302\t1\n20200301\tUS\teng\t909345304\t12\n20200301\tUS\teng\t909345306\t3\n20200301\tUS\teng\t909345310\t1\n20200301\tUS\teng\t909345311\t1\n20200301\tUS\teng\t909345314\t1\n20200301\tUS\teng\t909345369\t3\n20200301\tUS\teng\t909345371\t9\n20200301\tUS\teng\t909345372\t6\n20200301\tUS\teng\t909345374\t9\n20200301\tUS\teng\t909345375\t1\n20200301\tUS\teng\t909345379\t3\n20200301\tUS\teng\t909345381\t3\n20200301\tUS\teng\t909345390\t3\n20200301\tUS\teng\t909345396\t1\n20200301\tUS\teng\t909345398\t1\n20200301\tUS\teng\t909345399\t1\n20200301\tUS\teng\t909345401\t5\n20200301\tUS\teng\t909345402\t1\n20200301\tUS\teng\t909345403\t5\n20200301\tUS\teng\t909345409\t1\n20200301\tUS\teng\t909345411\t1\n20200301\tUS\teng\t909345412\t4\n20200301\tUS\teng\t909345413\t1\n20200301\tUS\teng\t909345414\t9\n20200301\tUS\teng\t909345415\t1\n20200301\tUS\teng\t909345418\t1\n20200301\tUS\teng\t909345425\t1\n20200301\tUS\teng\t909345426\t1\n20200301\tUS\teng\t909345429\t1\n20200301\tUS\teng\t909345431\t1\n20200301\tUS\teng\t909345436\t1\n20200301\tUS\teng\t909345438\t1\n20200301\tUS\teng\t909345452\t1\n20200301\tUS\teng\t909345453\t1\n20200301\tUS\teng\t909345454\t1\n20200301\tUS\teng\t909345455\t1\n20200301\tUS\teng\t909345456\t1\n20200301\tUS\teng\t909345457\t3\n20200301\tUS\teng\t909345458\t1\n20200301\tUS\teng\t909345459\t5\n20200301\tUS\teng\t909345460\t3\n20200301\tUS\teng\t909345461\t3\n20200301\tUS\teng\t909345462\t6\n20200301\tUS\teng\t909345463\t6\n20200301\tUS\teng\t909345464\t1\n20200301\tUS\teng\t909345465\t9\n20200301\tUS\teng\t909345466\t3\n20200301\tUS\teng\t909345467\t6\n20200301\tUS\teng\t909345475\t2\n20200301\tUS\teng\t909345476\t10\n20200301\tUS\teng\t909345494\t3\n20200301\tUS\teng\t909345498\t1\n20200301\tUS\teng\t909345499\t3\n20200301\tUS\teng\t909345502\t1\n20200301\tUS\teng\t909345504\t9\n20200301\tUS\teng\t909345511\t1\n20200301\tUS\teng\t909345513\t1\n20200301\tUS\teng\t909345525\t1\n20200301\tUS\teng\t909345529\t3\n20200301\tUS\teng\t909345530\t5\n20200301\tUS\teng\t909345531\t3\n20200301\tUS\teng\t909345568\t2\n20200301\tUS\teng\t909345569\t4\n20200301\tUS\teng\t909345572\t5\n20200301\tUS\teng\t909345573\t1\n20200301\tUS\teng\t909345574\t1\n20200301\tUS\teng\t909345576\t1\n20200301\tUS\teng\t909345585\t3\n20200301\tUS\teng\t909345586\t1\n20200301\tUS\teng\t909345587\t1\n20200301\tUS\teng\t909345589\t2\n20200301\tUS\teng\t909345590\t3\n20200301\tUS\teng\t909345591\t1\n20200301\tUS\teng\t909345592\t1\n20200301\tUS\teng\t909345593\t4\n20200301\tUS\teng\t909345617\t1\n20200301\tUS\teng\t909345624\t1\n20200301\tUS\teng\t909345630\t1\n20200301\tUS\teng\t909345634\t1\n20200301\tUS\teng\t909345635\t4\n20200301\tUS\teng\t909345636\t1\n20200301\tUS\teng\t909345639\t5\n20200301\tUS\teng\t909345640\t6\n20200301\tUS\teng\t909345641\t11\n20200301\tUS\teng\t909345650\t3\n20200301\tUS\teng\t909345651\t2\n20200301\tUS\teng\t909345657\t1\n20200301\tUS\teng\t909345659\t2\n20200301\tUS\teng\t909345664\t1\n20200301\tUS\teng\t909345665\t1\n20200301\tUS\teng\t909345666\t1\n20200301\tUS\teng\t909345667\t1\n20200301\tUS\teng\t909345673\t1\n20200301\tUS\teng\t909345674\t1\n20200301\tUS\teng\t909345685\t1\n20200301\tUS\teng\t909345686\t2\n20200301\tUS\teng\t909345687\t4\n20200301\tUS\teng\t909345688\t2\n20200301\tUS\teng\t909345689\t1\n20200301\tUS\teng\t909345692\t1\n20200301\tUS\teng\t909345700\t1\n20200301\tFR\tfra\t909346076\t1\n20200301\tUK\teng\t909343466\t7\n20200301\tUK\teng\t909343517\t7\n20200301\tUK\teng\t909343518\t10\n20200301\tUK\teng\t909343520\t1\n20200301\tUK\teng\t909343528\t1\n20200301\tUK\teng\t909343810\t7\n20200301\tUK\teng\t909343843\t7\n20200301\tUK\teng\t909343878\t1\n20200301\tUK\teng\t909343957\t7\n20200301\tUK\teng\t909344190\t10\n20200301\tUK\teng\t909344191\t10\n20200301\tUK\teng\t909344195\t10\n20200301\tUK\teng\t909344198\t10\n20200301\tUK\teng\t909344200\t10\n20200301\tUK\teng\t909344202\t10\n20200301\tUK\teng\t909344203\t10\n20200301\tUK\teng\t909344204\t10\n20200301\tUK\teng\t909344205\t10\n20200301\tUK\teng\t909344236\t10\n20200301\tUK\teng\t909344237\t10\n20200301\tUK\teng\t909344238\t10\n20200301\tUK\teng\t909344239\t4\n20200301\tUK\teng\t909344242\t1\n20200301\tUK\teng\t909344244\t10\n20200301\tUK\teng\t909344245\t2\n20200301\tUK\teng\t909344252\t1\n20200301\tUK\teng\t909344256\t10\n20200301\tUK\teng\t909344258\t10\n20200301\tUK\teng\t909344259\t1\n20200301\tUK\teng\t909344260\t10\n20200301\tUK\teng\t909344261\t10\n20200301\tUK\teng\t909344262\t10\n20200301\tUK\teng\t909344266\t7\n20200301\tUK\teng\t909344267\t7\n20200301\tUK\teng\t909344269\t7\n20200301\tUK\teng\t909344272\t7\n20200301\tUK\teng\t909344281\t7\n20200301\tUK\teng\t909344284\t7\n20200301\tUK\teng\t909344285\t7\n20200301\tUK\teng\t909344291\t10\n20200301\tUK\teng\t909344292\t10\n20200301\tUK\teng\t909344293\t10\n20200301\tUK\teng\t909344294\t1\n20200301\tUK\teng\t909344295\t10\n20200301\tUK\teng\t909344296\t10\n20200301\tUK\teng\t909344298\t7\n20200301\tUK\teng\t909344299\t7\n20200301\tUK\teng\t909344308\t7\n20200301\tUK\teng\t909344329\t1\n20200301\tUK\teng\t909344392\t1\n20200301\tUK\teng\t909344393\t10\n20200301\tUK\teng\t909344394\t10\n20200301\tUK\teng\t909344493\t10\n20200301\tUK\teng\t909344633\t10\n20200301\tUK\teng\t909344636\t7\n20200301\tUK\teng\t909344637\t7\n20200301\tUK\teng\t909344639\t7\n20200301\tUK\teng\t909344641\t7\n20200301\tUK\teng\t909344667\t10\n20200301\tUK\teng\t909344669\t7\n20200301\tIT\tspa\t909343559\t1\n20200301\tIT\tspa\t909344687\t1\n20200301\tIT\tspa\t909344688\t1\n20200301\tIT\tspa\t909345926\t2\n20200301\tIT\tspa\t909345927\t1\n20200301\tIT\tspa\t909345928\t1\n20200301\tIT\tspa\t909345929\t1\n20200301\tIT\tspa\t909346031\t1\n20200301\tIT\tspa\t909346032\t1\n20200301\tIT\tspa\t909346080\t2\n20200301\tIT\tspa\t909346081\t1\n20200301\tIT\tspa\t909346082\t1\n20200301\tIT\tspa\t909346281\t1\n20200301\tIT\tspa\t909346283\t2\n20200301\tIT\tspa\t909346290\t1\n20200301\tIT\tspa\t909346292\t1\n20200301\tIT\tspa\t909346322\t1\n20200301\tIT\tspa\t909346325\t1\n20200301\tIT\tspa\t909346562\t1\n20200301\tIT\tspa\t909346564\t1\n20200301\tIT\tspa\t909346568\t1\n20200301\tIT\tspa\t909346569\t1\n20200301\tBA\teng\t909343795\t1\n20200301\tBA\teng\t909344628\t1\n20200301\tBA\teng\t909344629\t1\n20200301\t\tfra\t909345824\t1\n20200301\t\tfra\t909345958\t1\n20200301\t\tfra\t909345959\t1\n20200301\t\tfra\t909345960\t1\n20200301\t\tfra\t909345961\t1\n20200301\t\tfra\t909346095\t1\n20200301\t\tfra\t909346330\t1\n20200301\t\tfra\t909346349\t1\n20200301\t\tfra\t909346350\t1\n20200301\tEI\teng\t909343553\t9\n20200301\tEI\teng\t909343992\t9\n20200301\tEI\teng\t909344384\t9\n20200301\tEI\teng\t909344399\t9\n20200301\tEI\teng\t909344487\t9\n20200301\tEI\teng\t909344588\t9\n20200301\tEI\teng\t909344591\t9\n20200301\tEI\teng\t909344593\t9\n20200301\tEI\teng\t909344594\t9\n20200301\tEI\teng\t909344595\t9\n20200301\tEI\teng\t909344596\t9\n20200301\tEI\teng\t909344599\t9\n20200301\tNP\teng\t909344071\t1\n20200301\tNP\teng\t909344072\t2\n20200301\tNP\teng\t909344955\t1\n20200301\tNP\teng\t909344956\t2\n20200301\tNP\teng\t909344957\t1\n20200301\tNP\teng\t909344958\t2\n20200301\tNP\teng\t909344959\t1\n20200301\tNP\teng\t909344960\t2\n20200301\tGR\trus\t909346413\t1\n20200301\tIN\teng\t909343765\t1\n20200301\tIN\teng\t909343766\t1\n20200301\tIN\teng\t909344572\t1\n20200301\tIN\teng\t909345273\t1\n20200301\tIN\teng\t909345663\t5\n20200301\tIR\tspa\t909344603\t2\n20200301\tIR\tspa\t909345760\t1\n20200301\tIR\tspa\t909345808\t1\n20200301\tIR\tspa\t909346175\t1\n20200301\tIR\tspa\t909346262\t1\n20200301\tIR\tspa\t909346263\t2\n20200301\tIR\tspa\t909346268\t1\n20200301\tIR\tspa\t909346269\t1\n20200301\tIR\tspa\t909346270\t1\n20200301\tIR\tspa\t909346577\t1\n20200301\tBR\teng\t909343588\t1\n20200301\tBR\teng\t909343803\t1\n20200301\tBR\teng\t909344391\t1\n20200301\tBR\teng\t909344541\t1\n20200301\tBR\teng\t909344857\t1\n20200301\tBR\teng\t909345691\t1\n20200301\tDR\teng\t909343500\t1\n20200301\tDR\teng\t909343832\t1\n20200301\tDR\teng\t909344136\t1\n20200301\tBR\tpor\t909345741\t1\n20200301\tBR\tpor\t909346098\t1\n20200301\tBR\tpor\t909346137\t1\n20200301\tBR\tpor\t909346144\t1\n20200301\tGM\teng\t909344602\t10\n20200301\tGM\teng\t909344718\t1\n20200301\tGM\teng\t909345305\t10\n20200301\tGM\teng\t909345480\t10\n20200301\tMX\teng\t909343536\t1\n20200301\tMX\teng\t909343802\t1\n20200301\tMX\teng\t909343839\t2\n20200301\tMX\teng\t909344224\t1\n20200301\tMX\teng\t909344226\t1\n20200301\tMX\teng\t909344412\t1\n20200301\tMX\teng\t909344413\t1\n20200301\tMX\teng\t909344488\t1\n20200301\tMX\teng\t909344605\t2\n20200301\tMX\teng\t909344609\t2\n20200301\tMX\teng\t909344835\t1\n20200301\tMX\teng\t909344854\t1\n20200301\tMX\teng\t909344858\t1\n20200301\tMX\teng\t909344859\t1\n20200301\tMX\teng\t909345690\t1\n20200301\tRS\trus\t909345753\t1\n20200301\tRS\trus\t909346197\t1\n20200301\tRS\trus\t909346198\t1\n20200301\tRS\trus\t909346200\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062622_1050983480",
+      "id": "20210121-231533_1522646538",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26266"
+    },
+    {
+      "text": "%md\n# Requête 2",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Requête 2</h1>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062624_1524830274",
+      "id": "20210122-005433_1719525404",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26267"
+    },
+    {
+      "text": "%md\nPour un pays donné en paramètre, affichez les évènements qui y ont eu place triés par le nombre de mentions (tri décroissant)\nPermettez une agrégation par jour/mois/année\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour un pays donné en paramètre, affichez les évènements qui y ont eu place triés par le nombre de mentions (tri décroissant)<br/>Permettez une agrégation par jour/mois/année</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062624_1438459817",
+      "id": "20210122-005044_176350655",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26268"
+    },
+    {
+      "text": "//actioncountry text, day int, monthyear int, year int, nummentions int, globaleventid text, \n//PRIMARY KEY ((actioncountry, day, monthyear, year),globaleventid)",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062625_677705176",
+      "id": "20210122-010603_81470234",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26269"
+    },
+    {
+      "text": "%cassandra\nSELECT * FROM table_r2 WHERE actioncountry='US' ALLOW FILTERING;",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "actioncountry": "string",
+                      "day": "string",
+                      "monthyear": "string",
+                      "year": "string",
+                      "globaleventid": "string",
+                      "nummentions": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "actioncountry",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "day",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "actioncountry\tday\tmonthyear\tyear\tglobaleventid\tnummentions\nUS\t20190302\t201903\t2019\t909343389\t2\nUS\t20190302\t201903\t2019\t909343393\t2\nUS\t20190302\t201903\t2019\t909343399\t1\nUS\t20190302\t201903\t2019\t909343400\t1\nUS\t20190302\t201903\t2019\t909343401\t1\nUS\t20190302\t201903\t2019\t909343402\t1\nUS\t20190302\t201903\t2019\t909345719\t1\nUS\t20200223\t202002\t2020\t909343410\t1\nUS\t20200223\t202002\t2020\t909343414\t1\nUS\t20200223\t202002\t2020\t909343415\t1\nUS\t20200223\t202002\t2020\t909343416\t1\nUS\t20200223\t202002\t2020\t909343417\t1\nUS\t20200223\t202002\t2020\t909343418\t1\nUS\t20200223\t202002\t2020\t909343419\t1\nUS\t20200223\t202002\t2020\t909343420\t1\nUS\t20200223\t202002\t2020\t909343421\t1\nUS\t20200223\t202002\t2020\t909343422\t1\nUS\t20200223\t202002\t2020\t909343423\t1\nUS\t20200223\t202002\t2020\t909343424\t1\nUS\t20200223\t202002\t2020\t909343425\t1\nUS\t20200223\t202002\t2020\t909343426\t1\nUS\t20200223\t202002\t2020\t909343427\t1\nUS\t20200131\t202001\t2020\t909343405\t1\nUS\t20200131\t202001\t2020\t909343407\t1\nUS\t20200301\t202003\t2020\t909343435\t1\nUS\t20200301\t202003\t2020\t909343436\t11\nUS\t20200301\t202003\t2020\t909343437\t1\nUS\t20200301\t202003\t2020\t909343446\t5\nUS\t20200301\t202003\t2020\t909343447\t1\nUS\t20200301\t202003\t2020\t909343448\t10\nUS\t20200301\t202003\t2020\t909343450\t1\nUS\t20200301\t202003\t2020\t909343463\t1\nUS\t20200301\t202003\t2020\t909343464\t1\nUS\t20200301\t202003\t2020\t909343468\t1\nUS\t20200301\t202003\t2020\t909343469\t1\nUS\t20200301\t202003\t2020\t909343471\t1\nUS\t20200301\t202003\t2020\t909343473\t1\nUS\t20200301\t202003\t2020\t909343475\t1\nUS\t20200301\t202003\t2020\t909343476\t6\nUS\t20200301\t202003\t2020\t909343478\t9\nUS\t20200301\t202003\t2020\t909343479\t1\nUS\t20200301\t202003\t2020\t909343480\t4\nUS\t20200301\t202003\t2020\t909343481\t4\nUS\t20200301\t202003\t2020\t909343483\t9\nUS\t20200301\t202003\t2020\t909343485\t1\nUS\t20200301\t202003\t2020\t909343487\t1\nUS\t20200301\t202003\t2020\t909343488\t1\nUS\t20200301\t202003\t2020\t909343490\t10\nUS\t20200301\t202003\t2020\t909343491\t1\nUS\t20200301\t202003\t2020\t909343492\t1\nUS\t20200301\t202003\t2020\t909343493\t1\nUS\t20200301\t202003\t2020\t909343494\t1\nUS\t20200301\t202003\t2020\t909343497\t1\nUS\t20200301\t202003\t2020\t909343504\t1\nUS\t20200301\t202003\t2020\t909343521\t1\nUS\t20200301\t202003\t2020\t909343529\t2\nUS\t20200301\t202003\t2020\t909343531\t1\nUS\t20200301\t202003\t2020\t909343538\t3\nUS\t20200301\t202003\t2020\t909343541\t1\nUS\t20200301\t202003\t2020\t909343572\t1\nUS\t20200301\t202003\t2020\t909343574\t1\nUS\t20200301\t202003\t2020\t909343575\t1\nUS\t20200301\t202003\t2020\t909343577\t1\nUS\t20200301\t202003\t2020\t909343578\t1\nUS\t20200301\t202003\t2020\t909343581\t1\nUS\t20200301\t202003\t2020\t909343582\t1\nUS\t20200301\t202003\t2020\t909343584\t10\nUS\t20200301\t202003\t2020\t909343589\t1\nUS\t20200301\t202003\t2020\t909343591\t1\nUS\t20200301\t202003\t2020\t909343613\t5\nUS\t20200301\t202003\t2020\t909343615\t1\nUS\t20200301\t202003\t2020\t909343616\t1\nUS\t20200301\t202003\t2020\t909343617\t1\nUS\t20200301\t202003\t2020\t909343618\t1\nUS\t20200301\t202003\t2020\t909343620\t1\nUS\t20200301\t202003\t2020\t909343621\t1\nUS\t20200301\t202003\t2020\t909343623\t1\nUS\t20200301\t202003\t2020\t909343624\t1\nUS\t20200301\t202003\t2020\t909343625\t2\nUS\t20200301\t202003\t2020\t909343626\t1\nUS\t20200301\t202003\t2020\t909343627\t3\nUS\t20200301\t202003\t2020\t909343628\t1\nUS\t20200301\t202003\t2020\t909343629\t1\nUS\t20200301\t202003\t2020\t909343630\t1\nUS\t20200301\t202003\t2020\t909343631\t1\nUS\t20200301\t202003\t2020\t909343632\t1\nUS\t20200301\t202003\t2020\t909343633\t2\nUS\t20200301\t202003\t2020\t909343634\t1\nUS\t20200301\t202003\t2020\t909343636\t1\nUS\t20200301\t202003\t2020\t909343637\t1\nUS\t20200301\t202003\t2020\t909343638\t1\nUS\t20200301\t202003\t2020\t909343639\t1\nUS\t20200301\t202003\t2020\t909343640\t1\nUS\t20200301\t202003\t2020\t909343641\t1\nUS\t20200301\t202003\t2020\t909343642\t1\nUS\t20200301\t202003\t2020\t909343643\t2\nUS\t20200301\t202003\t2020\t909343644\t2\nUS\t20200301\t202003\t2020\t909343645\t10\nUS\t20200301\t202003\t2020\t909343646\t1\nUS\t20200301\t202003\t2020\t909343647\t1\nUS\t20200301\t202003\t2020\t909343648\t1\nUS\t20200301\t202003\t2020\t909343649\t1\nUS\t20200301\t202003\t2020\t909343650\t2\nUS\t20200301\t202003\t2020\t909343651\t1\nUS\t20200301\t202003\t2020\t909343652\t3\nUS\t20200301\t202003\t2020\t909343653\t1\nUS\t20200301\t202003\t2020\t909343654\t1\nUS\t20200301\t202003\t2020\t909343655\t3\nUS\t20200301\t202003\t2020\t909343656\t1\nUS\t20200301\t202003\t2020\t909343657\t3\nUS\t20200301\t202003\t2020\t909343658\t3\nUS\t20200301\t202003\t2020\t909343659\t1\nUS\t20200301\t202003\t2020\t909343660\t2\nUS\t20200301\t202003\t2020\t909343661\t3\nUS\t20200301\t202003\t2020\t909343662\t1\nUS\t20200301\t202003\t2020\t909343663\t1\nUS\t20200301\t202003\t2020\t909343664\t1\nUS\t20200301\t202003\t2020\t909343665\t1\nUS\t20200301\t202003\t2020\t909343666\t1\nUS\t20200301\t202003\t2020\t909343667\t6\nUS\t20200301\t202003\t2020\t909343668\t2\nUS\t20200301\t202003\t2020\t909343669\t1\nUS\t20200301\t202003\t2020\t909343670\t1\nUS\t20200301\t202003\t2020\t909343671\t1\nUS\t20200301\t202003\t2020\t909343672\t1\nUS\t20200301\t202003\t2020\t909343673\t1\nUS\t20200301\t202003\t2020\t909343674\t1\nUS\t20200301\t202003\t2020\t909343675\t3\nUS\t20200301\t202003\t2020\t909343678\t1\nUS\t20200301\t202003\t2020\t909343682\t1\nUS\t20200301\t202003\t2020\t909343689\t1\nUS\t20200301\t202003\t2020\t909343691\t1\nUS\t20200301\t202003\t2020\t909343703\t1\nUS\t20200301\t202003\t2020\t909343707\t1\nUS\t20200301\t202003\t2020\t909343715\t1\nUS\t20200301\t202003\t2020\t909343724\t1\nUS\t20200301\t202003\t2020\t909343726\t1\nUS\t20200301\t202003\t2020\t909343734\t1\nUS\t20200301\t202003\t2020\t909343739\t1\nUS\t20200301\t202003\t2020\t909343742\t1\nUS\t20200301\t202003\t2020\t909343743\t1\nUS\t20200301\t202003\t2020\t909343744\t1\nUS\t20200301\t202003\t2020\t909343745\t1\nUS\t20200301\t202003\t2020\t909343747\t1\nUS\t20200301\t202003\t2020\t909343748\t1\nUS\t20200301\t202003\t2020\t909343749\t6\nUS\t20200301\t202003\t2020\t909343750\t6\nUS\t20200301\t202003\t2020\t909343752\t1\nUS\t20200301\t202003\t2020\t909343753\t10\nUS\t20200301\t202003\t2020\t909343754\t1\nUS\t20200301\t202003\t2020\t909343756\t1\nUS\t20200301\t202003\t2020\t909343757\t1\nUS\t20200301\t202003\t2020\t909343758\t1\nUS\t20200301\t202003\t2020\t909343759\t6\nUS\t20200301\t202003\t2020\t909343760\t1\nUS\t20200301\t202003\t2020\t909343761\t1\nUS\t20200301\t202003\t2020\t909343762\t1\nUS\t20200301\t202003\t2020\t909343763\t1\nUS\t20200301\t202003\t2020\t909343807\t1\nUS\t20200301\t202003\t2020\t909343813\t11\nUS\t20200301\t202003\t2020\t909343814\t5\nUS\t20200301\t202003\t2020\t909343815\t1\nUS\t20200301\t202003\t2020\t909343816\t10\nUS\t20200301\t202003\t2020\t909343817\t1\nUS\t20200301\t202003\t2020\t909343819\t5\nUS\t20200301\t202003\t2020\t909343825\t1\nUS\t20200301\t202003\t2020\t909343835\t2\nUS\t20200301\t202003\t2020\t909343836\t1\nUS\t20200301\t202003\t2020\t909343837\t2\nUS\t20200301\t202003\t2020\t909343849\t6\nUS\t20200301\t202003\t2020\t909343850\t9\nUS\t20200301\t202003\t2020\t909343851\t1\nUS\t20200301\t202003\t2020\t909343852\t6\nUS\t20200301\t202003\t2020\t909343853\t1\nUS\t20200301\t202003\t2020\t909343854\t9\nUS\t20200301\t202003\t2020\t909343855\t1\nUS\t20200301\t202003\t2020\t909343856\t6\nUS\t20200301\t202003\t2020\t909343859\t6\nUS\t20200301\t202003\t2020\t909343860\t11\nUS\t20200301\t202003\t2020\t909343899\t1\nUS\t20200301\t202003\t2020\t909343900\t3\nUS\t20200301\t202003\t2020\t909343942\t1\nUS\t20200301\t202003\t2020\t909343948\t1\nUS\t20200301\t202003\t2020\t909343950\t1\nUS\t20200301\t202003\t2020\t909343951\t1\nUS\t20200301\t202003\t2020\t909343956\t1\nUS\t20200301\t202003\t2020\t909343960\t1\nUS\t20200301\t202003\t2020\t909343964\t1\nUS\t20200301\t202003\t2020\t909343968\t1\nUS\t20200301\t202003\t2020\t909343969\t1\nUS\t20200301\t202003\t2020\t909343970\t1\nUS\t20200301\t202003\t2020\t909343971\t1\nUS\t20200301\t202003\t2020\t909343972\t1\nUS\t20200301\t202003\t2020\t909343978\t16\nUS\t20200301\t202003\t2020\t909343981\t10\nUS\t20200301\t202003\t2020\t909343982\t10\nUS\t20200301\t202003\t2020\t909343983\t1\nUS\t20200301\t202003\t2020\t909343984\t1\nUS\t20200301\t202003\t2020\t909343988\t1\nUS\t20200301\t202003\t2020\t909343989\t1\nUS\t20200301\t202003\t2020\t909343990\t1\nUS\t20200301\t202003\t2020\t909343991\t1\nUS\t20200301\t202003\t2020\t909344006\t10\nUS\t20200301\t202003\t2020\t909344007\t1\nUS\t20200301\t202003\t2020\t909344008\t1\nUS\t20200301\t202003\t2020\t909344009\t1\nUS\t20200301\t202003\t2020\t909344010\t10\nUS\t20200301\t202003\t2020\t909344011\t10\nUS\t20200301\t202003\t2020\t909344019\t1\nUS\t20200301\t202003\t2020\t909344020\t1\nUS\t20200301\t202003\t2020\t909344022\t7\nUS\t20200301\t202003\t2020\t909344023\t3\nUS\t20200301\t202003\t2020\t909344024\t7\nUS\t20200301\t202003\t2020\t909344026\t1\nUS\t20200301\t202003\t2020\t909344028\t1\nUS\t20200301\t202003\t2020\t909344030\t1\nUS\t20200301\t202003\t2020\t909344031\t2\nUS\t20200301\t202003\t2020\t909344034\t1\nUS\t20200301\t202003\t2020\t909344037\t1\nUS\t20200301\t202003\t2020\t909344038\t1\nUS\t20200301\t202003\t2020\t909344039\t7\nUS\t20200301\t202003\t2020\t909344041\t1\nUS\t20200301\t202003\t2020\t909344048\t1\nUS\t20200301\t202003\t2020\t909344052\t1\nUS\t20200301\t202003\t2020\t909344053\t2\nUS\t20200301\t202003\t2020\t909344054\t1\nUS\t20200301\t202003\t2020\t909344059\t1\nUS\t20200301\t202003\t2020\t909344062\t1\nUS\t20200301\t202003\t2020\t909344063\t1\nUS\t20200301\t202003\t2020\t909344066\t3\nUS\t20200301\t202003\t2020\t909344067\t3\nUS\t20200301\t202003\t2020\t909344068\t1\nUS\t20200301\t202003\t2020\t909344073\t1\nUS\t20200301\t202003\t2020\t909344074\t1\nUS\t20200301\t202003\t2020\t909344075\t1\nUS\t20200301\t202003\t2020\t909344076\t3\nUS\t20200301\t202003\t2020\t909344077\t1\nUS\t20200301\t202003\t2020\t909344078\t1\nUS\t20200301\t202003\t2020\t909344080\t1\nUS\t20200301\t202003\t2020\t909344081\t1\nUS\t20200301\t202003\t2020\t909344082\t1\nUS\t20200301\t202003\t2020\t909344084\t1\nUS\t20200301\t202003\t2020\t909344085\t1\nUS\t20200301\t202003\t2020\t909344086\t1\nUS\t20200301\t202003\t2020\t909344087\t1\nUS\t20200301\t202003\t2020\t909344088\t1\nUS\t20200301\t202003\t2020\t909344089\t1\nUS\t20200301\t202003\t2020\t909344090\t1\nUS\t20200301\t202003\t2020\t909344091\t1\nUS\t20200301\t202003\t2020\t909344092\t1\nUS\t20200301\t202003\t2020\t909344093\t3\nUS\t20200301\t202003\t2020\t909344094\t3\nUS\t20200301\t202003\t2020\t909344095\t2\nUS\t20200301\t202003\t2020\t909344096\t2\nUS\t20200301\t202003\t2020\t909344097\t2\nUS\t20200301\t202003\t2020\t909344098\t6\nUS\t20200301\t202003\t2020\t909344099\t1\nUS\t20200301\t202003\t2020\t909344100\t1\nUS\t20200301\t202003\t2020\t909344101\t1\nUS\t20200301\t202003\t2020\t909344102\t1\nUS\t20200301\t202003\t2020\t909344103\t1\nUS\t20200301\t202003\t2020\t909344104\t1\nUS\t20200301\t202003\t2020\t909344105\t2\nUS\t20200301\t202003\t2020\t909344106\t1\nUS\t20200301\t202003\t2020\t909344107\t1\nUS\t20200301\t202003\t2020\t909344108\t1\nUS\t20200301\t202003\t2020\t909344109\t5\nUS\t20200301\t202003\t2020\t909344111\t1\nUS\t20200301\t202003\t2020\t909344138\t1\nUS\t20200301\t202003\t2020\t909344139\t1\nUS\t20200301\t202003\t2020\t909344140\t1\nUS\t20200301\t202003\t2020\t909344142\t1\nUS\t20200301\t202003\t2020\t909344144\t1\nUS\t20200301\t202003\t2020\t909344150\t1\nUS\t20200301\t202003\t2020\t909344151\t1\nUS\t20200301\t202003\t2020\t909344156\t1\nUS\t20200301\t202003\t2020\t909344159\t1\nUS\t20200301\t202003\t2020\t909344160\t4\nUS\t20200301\t202003\t2020\t909344161\t1\nUS\t20200301\t202003\t2020\t909344162\t9\nUS\t20200301\t202003\t2020\t909344177\t1\nUS\t20200301\t202003\t2020\t909344178\t1\nUS\t20200301\t202003\t2020\t909344179\t1\nUS\t20200301\t202003\t2020\t909344181\t1\nUS\t20200301\t202003\t2020\t909344229\t1\nUS\t20200301\t202003\t2020\t909344268\t1\nUS\t20200301\t202003\t2020\t909344282\t4\nUS\t20200301\t202003\t2020\t909344288\t1\nUS\t20200301\t202003\t2020\t909344289\t2\nUS\t20200301\t202003\t2020\t909344290\t2\nUS\t20200301\t202003\t2020\t909344312\t1\nUS\t20200301\t202003\t2020\t909344313\t1\nUS\t20200301\t202003\t2020\t909344314\t2\nUS\t20200301\t202003\t2020\t909344316\t1\nUS\t20200301\t202003\t2020\t909344320\t6\nUS\t20200301\t202003\t2020\t909344321\t3\nUS\t20200301\t202003\t2020\t909344322\t6\nUS\t20200301\t202003\t2020\t909344323\t1\nUS\t20200301\t202003\t2020\t909344324\t1\nUS\t20200301\t202003\t2020\t909344325\t1\nUS\t20200301\t202003\t2020\t909344333\t1\nUS\t20200301\t202003\t2020\t909344342\t1\nUS\t20200301\t202003\t2020\t909344343\t2\nUS\t20200301\t202003\t2020\t909344344\t7\nUS\t20200301\t202003\t2020\t909344348\t1\nUS\t20200301\t202003\t2020\t909344349\t2\nUS\t20200301\t202003\t2020\t909344352\t1\nUS\t20200301\t202003\t2020\t909344365\t9\nUS\t20200301\t202003\t2020\t909344386\t1\nUS\t20200301\t202003\t2020\t909344387\t1\nUS\t20200301\t202003\t2020\t909344395\t2\nUS\t20200301\t202003\t2020\t909344396\t1\nUS\t20200301\t202003\t2020\t909344442\t1\nUS\t20200301\t202003\t2020\t909344443\t1\nUS\t20200301\t202003\t2020\t909344444\t2\nUS\t20200301\t202003\t2020\t909344445\t1\nUS\t20200301\t202003\t2020\t909344447\t1\nUS\t20200301\t202003\t2020\t909344448\t1\nUS\t20200301\t202003\t2020\t909344451\t3\nUS\t20200301\t202003\t2020\t909344452\t6\nUS\t20200301\t202003\t2020\t909344453\t3\nUS\t20200301\t202003\t2020\t909344454\t6\nUS\t20200301\t202003\t2020\t909344455\t5\nUS\t20200301\t202003\t2020\t909344456\t6\nUS\t20200301\t202003\t2020\t909344457\t6\nUS\t20200301\t202003\t2020\t909344459\t1\nUS\t20200301\t202003\t2020\t909344460\t1\nUS\t20200301\t202003\t2020\t909344461\t1\nUS\t20200301\t202003\t2020\t909344462\t1\nUS\t20200301\t202003\t2020\t909344463\t1\nUS\t20200301\t202003\t2020\t909344464\t1\nUS\t20200301\t202003\t2020\t909344467\t1\nUS\t20200301\t202003\t2020\t909344468\t1\nUS\t20200301\t202003\t2020\t909344469\t1\nUS\t20200301\t202003\t2020\t909344470\t1\nUS\t20200301\t202003\t2020\t909344471\t1\nUS\t20200301\t202003\t2020\t909344472\t1\nUS\t20200301\t202003\t2020\t909344473\t1\nUS\t20200301\t202003\t2020\t909344474\t3\nUS\t20200301\t202003\t2020\t909344475\t6\nUS\t20200301\t202003\t2020\t909344476\t1\nUS\t20200301\t202003\t2020\t909344477\t1\nUS\t20200301\t202003\t2020\t909344478\t1\nUS\t20200301\t202003\t2020\t909344479\t2\nUS\t20200301\t202003\t2020\t909344480\t2\nUS\t20200301\t202003\t2020\t909344491\t1\nUS\t20200301\t202003\t2020\t909344492\t1\nUS\t20200301\t202003\t2020\t909344494\t1\nUS\t20200301\t202003\t2020\t909344496\t4\nUS\t20200301\t202003\t2020\t909344498\t4\nUS\t20200301\t202003\t2020\t909344499\t3\nUS\t20200301\t202003\t2020\t909344500\t1\nUS\t20200301\t202003\t2020\t909344501\t1\nUS\t20200301\t202003\t2020\t909344503\t1\nUS\t20200301\t202003\t2020\t909344506\t1\nUS\t20200301\t202003\t2020\t909344507\t10\nUS\t20200301\t202003\t2020\t909344508\t3\nUS\t20200301\t202003\t2020\t909344509\t3\nUS\t20200301\t202003\t2020\t909344510\t6\nUS\t20200301\t202003\t2020\t909344511\t6\nUS\t20200301\t202003\t2020\t909344512\t1\nUS\t20200301\t202003\t2020\t909344513\t9\nUS\t20200301\t202003\t2020\t909344514\t1\nUS\t20200301\t202003\t2020\t909344528\t1\nUS\t20200301\t202003\t2020\t909344534\t1\nUS\t20200301\t202003\t2020\t909344537\t1\nUS\t20200301\t202003\t2020\t909344538\t1\nUS\t20200301\t202003\t2020\t909344544\t1\nUS\t20200301\t202003\t2020\t909344545\t1\nUS\t20200301\t202003\t2020\t909344546\t1\nUS\t20200301\t202003\t2020\t909344547\t1\nUS\t20200301\t202003\t2020\t909344551\t1\nUS\t20200301\t202003\t2020\t909344552\t1\nUS\t20200301\t202003\t2020\t909344553\t1\nUS\t20200301\t202003\t2020\t909344555\t2\nUS\t20200301\t202003\t2020\t909344557\t2\nUS\t20200301\t202003\t2020\t909344563\t1\nUS\t20200301\t202003\t2020\t909344566\t1\nUS\t20200301\t202003\t2020\t909344585\t1\nUS\t20200301\t202003\t2020\t909344607\t2\nUS\t20200301\t202003\t2020\t909344649\t2\nUS\t20200301\t202003\t2020\t909344650\t2\nUS\t20200301\t202003\t2020\t909344652\t2\nUS\t20200301\t202003\t2020\t909344656\t2\nUS\t20200301\t202003\t2020\t909344659\t2\nUS\t20200301\t202003\t2020\t909344661\t2\nUS\t20200301\t202003\t2020\t909344701\t5\nUS\t20200301\t202003\t2020\t909344716\t1\nUS\t20200301\t202003\t2020\t909344717\t2\nUS\t20200301\t202003\t2020\t909344725\t1\nUS\t20200301\t202003\t2020\t909344731\t3\nUS\t20200301\t202003\t2020\t909344732\t1\nUS\t20200301\t202003\t2020\t909344733\t1\nUS\t20200301\t202003\t2020\t909344735\t1\nUS\t20200301\t202003\t2020\t909344736\t1\nUS\t20200301\t202003\t2020\t909344737\t3\nUS\t20200301\t202003\t2020\t909344739\t1\nUS\t20200301\t202003\t2020\t909344741\t1\nUS\t20200301\t202003\t2020\t909344746\t1\nUS\t20200301\t202003\t2020\t909344754\t2\nUS\t20200301\t202003\t2020\t909344759\t3\nUS\t20200301\t202003\t2020\t909344762\t1\nUS\t20200301\t202003\t2020\t909344763\t9\nUS\t20200301\t202003\t2020\t909344769\t3\nUS\t20200301\t202003\t2020\t909344772\t9\nUS\t20200301\t202003\t2020\t909344773\t1\nUS\t20200301\t202003\t2020\t909344774\t5\nUS\t20200301\t202003\t2020\t909344775\t1\nUS\t20200301\t202003\t2020\t909344776\t9\nUS\t20200301\t202003\t2020\t909344777\t1\nUS\t20200301\t202003\t2020\t909344778\t6\nUS\t20200301\t202003\t2020\t909344779\t6\nUS\t20200301\t202003\t2020\t909344780\t1\nUS\t20200301\t202003\t2020\t909344781\t1\nUS\t20200301\t202003\t2020\t909344785\t1\nUS\t20200301\t202003\t2020\t909344788\t1\nUS\t20200301\t202003\t2020\t909344789\t1\nUS\t20200301\t202003\t2020\t909344790\t1\nUS\t20200301\t202003\t2020\t909344793\t1\nUS\t20200301\t202003\t2020\t909344794\t1\nUS\t20200301\t202003\t2020\t909344795\t1\nUS\t20200301\t202003\t2020\t909344798\t1\nUS\t20200301\t202003\t2020\t909344799\t1\nUS\t20200301\t202003\t2020\t909344800\t1\nUS\t20200301\t202003\t2020\t909344801\t1\nUS\t20200301\t202003\t2020\t909344803\t1\nUS\t20200301\t202003\t2020\t909344804\t1\nUS\t20200301\t202003\t2020\t909344808\t1\nUS\t20200301\t202003\t2020\t909344809\t6\nUS\t20200301\t202003\t2020\t909344810\t6\nUS\t20200301\t202003\t2020\t909344811\t1\nUS\t20200301\t202003\t2020\t909344812\t1\nUS\t20200301\t202003\t2020\t909344813\t1\nUS\t20200301\t202003\t2020\t909344814\t1\nUS\t20200301\t202003\t2020\t909344815\t1\nUS\t20200301\t202003\t2020\t909344816\t1\nUS\t20200301\t202003\t2020\t909344817\t1\nUS\t20200301\t202003\t2020\t909344818\t1\nUS\t20200301\t202003\t2020\t909344819\t2\nUS\t20200301\t202003\t2020\t909344820\t6\nUS\t20200301\t202003\t2020\t909344836\t1\nUS\t20200301\t202003\t2020\t909344837\t1\nUS\t20200301\t202003\t2020\t909344840\t1\nUS\t20200301\t202003\t2020\t909344841\t2\nUS\t20200301\t202003\t2020\t909344843\t1\nUS\t20200301\t202003\t2020\t909344844\t1\nUS\t20200301\t202003\t2020\t909344849\t1\nUS\t20200301\t202003\t2020\t909344850\t2\nUS\t20200301\t202003\t2020\t909344851\t2\nUS\t20200301\t202003\t2020\t909344852\t6\nUS\t20200301\t202003\t2020\t909344864\t2\nUS\t20200301\t202003\t2020\t909344877\t1\nUS\t20200301\t202003\t2020\t909344879\t1\nUS\t20200301\t202003\t2020\t909344880\t1\nUS\t20200301\t202003\t2020\t909344881\t1\nUS\t20200301\t202003\t2020\t909344882\t1\nUS\t20200301\t202003\t2020\t909344891\t1\nUS\t20200301\t202003\t2020\t909344892\t1\nUS\t20200301\t202003\t2020\t909344893\t1\nUS\t20200301\t202003\t2020\t909344896\t1\nUS\t20200301\t202003\t2020\t909344951\t1\nUS\t20200301\t202003\t2020\t909344952\t1\nUS\t20200301\t202003\t2020\t909344983\t1\nUS\t20200301\t202003\t2020\t909345000\t1\nUS\t20200301\t202003\t2020\t909345001\t1\nUS\t20200301\t202003\t2020\t909345002\t1\nUS\t20200301\t202003\t2020\t909345006\t1\nUS\t20200301\t202003\t2020\t909345007\t1\nUS\t20200301\t202003\t2020\t909345008\t1\nUS\t20200301\t202003\t2020\t909345009\t1\nUS\t20200301\t202003\t2020\t909345010\t1\nUS\t20200301\t202003\t2020\t909345011\t1\nUS\t20200301\t202003\t2020\t909345012\t1\nUS\t20200301\t202003\t2020\t909345013\t1\nUS\t20200301\t202003\t2020\t909345014\t1\nUS\t20200301\t202003\t2020\t909345015\t1\nUS\t20200301\t202003\t2020\t909345016\t1\nUS\t20200301\t202003\t2020\t909345017\t1\nUS\t20200301\t202003\t2020\t909345018\t6\nUS\t20200301\t202003\t2020\t909345019\t6\nUS\t20200301\t202003\t2020\t909345037\t1\nUS\t20200301\t202003\t2020\t909345054\t1\nUS\t20200301\t202003\t2020\t909345055\t1\nUS\t20200301\t202003\t2020\t909345087\t1\nUS\t20200301\t202003\t2020\t909345100\t1\nUS\t20200301\t202003\t2020\t909345137\t1\nUS\t20200301\t202003\t2020\t909345139\t1\nUS\t20200301\t202003\t2020\t909345141\t1\nUS\t20200301\t202003\t2020\t909345147\t1\nUS\t20200301\t202003\t2020\t909345149\t5\nUS\t20200301\t202003\t2020\t909345151\t3\nUS\t20200301\t202003\t2020\t909345156\t1\nUS\t20200301\t202003\t2020\t909345157\t3\nUS\t20200301\t202003\t2020\t909345161\t2\nUS\t20200301\t202003\t2020\t909345165\t1\nUS\t20200301\t202003\t2020\t909345166\t1\nUS\t20200301\t202003\t2020\t909345167\t1\nUS\t20200301\t202003\t2020\t909345168\t1\nUS\t20200301\t202003\t2020\t909345169\t1\nUS\t20200301\t202003\t2020\t909345170\t1\nUS\t20200301\t202003\t2020\t909345171\t5\nUS\t20200301\t202003\t2020\t909345172\t1\nUS\t20200301\t202003\t2020\t909345173\t1\nUS\t20200301\t202003\t2020\t909345175\t1\nUS\t20200301\t202003\t2020\t909345176\t7\nUS\t20200301\t202003\t2020\t909345177\t1\nUS\t20200301\t202003\t2020\t909345178\t7\nUS\t20200301\t202003\t2020\t909345179\t1\nUS\t20200301\t202003\t2020\t909345180\t2\nUS\t20200301\t202003\t2020\t909345181\t2\nUS\t20200301\t202003\t2020\t909345182\t2\nUS\t20200301\t202003\t2020\t909345183\t1\nUS\t20200301\t202003\t2020\t909345184\t7\nUS\t20200301\t202003\t2020\t909345185\t1\nUS\t20200301\t202003\t2020\t909345186\t1\nUS\t20200301\t202003\t2020\t909345187\t1\nUS\t20200301\t202003\t2020\t909345188\t1\nUS\t20200301\t202003\t2020\t909345189\t1\nUS\t20200301\t202003\t2020\t909345190\t2\nUS\t20200301\t202003\t2020\t909345191\t1\nUS\t20200301\t202003\t2020\t909345192\t9\nUS\t20200301\t202003\t2020\t909345193\t1\nUS\t20200301\t202003\t2020\t909345194\t1\nUS\t20200301\t202003\t2020\t909345195\t2\nUS\t20200301\t202003\t2020\t909345196\t1\nUS\t20200301\t202003\t2020\t909345197\t1\nUS\t20200301\t202003\t2020\t909345198\t2\nUS\t20200301\t202003\t2020\t909345199\t4\nUS\t20200301\t202003\t2020\t909345200\t1\nUS\t20200301\t202003\t2020\t909345201\t1\nUS\t20200301\t202003\t2020\t909345202\t11\nUS\t20200301\t202003\t2020\t909345203\t1\nUS\t20200301\t202003\t2020\t909345204\t2\nUS\t20200301\t202003\t2020\t909345205\t1\nUS\t20200301\t202003\t2020\t909345206\t1\nUS\t20200301\t202003\t2020\t909345207\t1\nUS\t20200301\t202003\t2020\t909345209\t6\nUS\t20200301\t202003\t2020\t909345210\t1\nUS\t20200301\t202003\t2020\t909345211\t1\nUS\t20200301\t202003\t2020\t909345213\t1\nUS\t20200301\t202003\t2020\t909345214\t3\nUS\t20200301\t202003\t2020\t909345215\t3\nUS\t20200301\t202003\t2020\t909345216\t2\nUS\t20200301\t202003\t2020\t909345217\t1\nUS\t20200301\t202003\t2020\t909345218\t2\nUS\t20200301\t202003\t2020\t909345219\t1\nUS\t20200301\t202003\t2020\t909345220\t1\nUS\t20200301\t202003\t2020\t909345223\t1\nUS\t20200301\t202003\t2020\t909345224\t1\nUS\t20200301\t202003\t2020\t909345226\t1\nUS\t20200301\t202003\t2020\t909345227\t1\nUS\t20200301\t202003\t2020\t909345228\t1\nUS\t20200301\t202003\t2020\t909345229\t3\nUS\t20200301\t202003\t2020\t909345230\t3\nUS\t20200301\t202003\t2020\t909345231\t1\nUS\t20200301\t202003\t2020\t909345232\t1\nUS\t20200301\t202003\t2020\t909345233\t1\nUS\t20200301\t202003\t2020\t909345234\t2\nUS\t20200301\t202003\t2020\t909345235\t1\nUS\t20200301\t202003\t2020\t909345237\t4\nUS\t20200301\t202003\t2020\t909345238\t2\nUS\t20200301\t202003\t2020\t909345240\t10\nUS\t20200301\t202003\t2020\t909345241\t1\nUS\t20200301\t202003\t2020\t909345242\t1\nUS\t20200301\t202003\t2020\t909345244\t1\nUS\t20200301\t202003\t2020\t909345245\t2\nUS\t20200301\t202003\t2020\t909345246\t1\nUS\t20200301\t202003\t2020\t909345247\t1\nUS\t20200301\t202003\t2020\t909345248\t1\nUS\t20200301\t202003\t2020\t909345249\t1\nUS\t20200301\t202003\t2020\t909345250\t1\nUS\t20200301\t202003\t2020\t909345251\t1\nUS\t20200301\t202003\t2020\t909345252\t1\nUS\t20200301\t202003\t2020\t909345253\t1\nUS\t20200301\t202003\t2020\t909345254\t1\nUS\t20200301\t202003\t2020\t909345255\t1\nUS\t20200301\t202003\t2020\t909345256\t1\nUS\t20200301\t202003\t2020\t909345257\t1\nUS\t20200301\t202003\t2020\t909345258\t1\nUS\t20200301\t202003\t2020\t909345259\t1\nUS\t20200301\t202003\t2020\t909345260\t2\nUS\t20200301\t202003\t2020\t909345261\t1\nUS\t20200301\t202003\t2020\t909345263\t1\nUS\t20200301\t202003\t2020\t909345264\t1\nUS\t20200301\t202003\t2020\t909345265\t6\nUS\t20200301\t202003\t2020\t909345266\t6\nUS\t20200301\t202003\t2020\t909345267\t1\nUS\t20200301\t202003\t2020\t909345268\t1\nUS\t20200301\t202003\t2020\t909345269\t3\nUS\t20200301\t202003\t2020\t909345270\t8\nUS\t20200301\t202003\t2020\t909345271\t5\nUS\t20200301\t202003\t2020\t909345272\t1\nUS\t20200301\t202003\t2020\t909345274\t2\nUS\t20200301\t202003\t2020\t909345275\t1\nUS\t20200301\t202003\t2020\t909345276\t1\nUS\t20200301\t202003\t2020\t909345277\t1\nUS\t20200301\t202003\t2020\t909345278\t1\nUS\t20200301\t202003\t2020\t909345279\t3\nUS\t20200301\t202003\t2020\t909345280\t2\nUS\t20200301\t202003\t2020\t909345281\t7\nUS\t20200301\t202003\t2020\t909345282\t1\nUS\t20200301\t202003\t2020\t909345283\t1\nUS\t20200301\t202003\t2020\t909345284\t1\nUS\t20200301\t202003\t2020\t909345285\t1\nUS\t20200301\t202003\t2020\t909345286\t1\nUS\t20200301\t202003\t2020\t909345288\t2\nUS\t20200301\t202003\t2020\t909345289\t1\nUS\t20200301\t202003\t2020\t909345290\t1\nUS\t20200301\t202003\t2020\t909345291\t13\nUS\t20200301\t202003\t2020\t909345293\t1\nUS\t20200301\t202003\t2020\t909345294\t1\nUS\t20200301\t202003\t2020\t909345295\t2\nUS\t20200301\t202003\t2020\t909345296\t13\nUS\t20200301\t202003\t2020\t909345297\t1\nUS\t20200301\t202003\t2020\t909345298\t1\nUS\t20200301\t202003\t2020\t909345299\t1\nUS\t20200301\t202003\t2020\t909345300\t1\nUS\t20200301\t202003\t2020\t909345302\t1\nUS\t20200301\t202003\t2020\t909345303\t5\nUS\t20200301\t202003\t2020\t909345304\t12\nUS\t20200301\t202003\t2020\t909345306\t3\nUS\t20200301\t202003\t2020\t909345307\t11\nUS\t20200301\t202003\t2020\t909345308\t1\nUS\t20200301\t202003\t2020\t909345309\t1\nUS\t20200301\t202003\t2020\t909345310\t1\nUS\t20200301\t202003\t2020\t909345311\t1\nUS\t20200301\t202003\t2020\t909345312\t1\nUS\t20200301\t202003\t2020\t909345313\t1\nUS\t20200301\t202003\t2020\t909345314\t1\nUS\t20200301\t202003\t2020\t909345315\t1\nUS\t20200301\t202003\t2020\t909345316\t1\nUS\t20200301\t202003\t2020\t909345317\t1\nUS\t20200301\t202003\t2020\t909345318\t1\nUS\t20200301\t202003\t2020\t909345319\t1\nUS\t20200301\t202003\t2020\t909345320\t2\nUS\t20200301\t202003\t2020\t909345321\t1\nUS\t20200301\t202003\t2020\t909345322\t1\nUS\t20200301\t202003\t2020\t909345323\t1\nUS\t20200301\t202003\t2020\t909345324\t1\nUS\t20200301\t202003\t2020\t909345325\t1\nUS\t20200301\t202003\t2020\t909345326\t1\nUS\t20200301\t202003\t2020\t909345327\t1\nUS\t20200301\t202003\t2020\t909345328\t1\nUS\t20200301\t202003\t2020\t909345329\t1\nUS\t20200301\t202003\t2020\t909345330\t1\nUS\t20200301\t202003\t2020\t909345332\t1\nUS\t20200301\t202003\t2020\t909345333\t1\nUS\t20200301\t202003\t2020\t909345334\t1\nUS\t20200301\t202003\t2020\t909345336\t1\nUS\t20200301\t202003\t2020\t909345339\t1\nUS\t20200301\t202003\t2020\t909345341\t11\nUS\t20200301\t202003\t2020\t909345342\t10\nUS\t20200301\t202003\t2020\t909345343\t1\nUS\t20200301\t202003\t2020\t909345344\t1\nUS\t20200301\t202003\t2020\t909345346\t1\nUS\t20200301\t202003\t2020\t909345347\t1\nUS\t20200301\t202003\t2020\t909345350\t1\nUS\t20200301\t202003\t2020\t909345353\t1\nUS\t20200301\t202003\t2020\t909345354\t1\nUS\t20200301\t202003\t2020\t909345355\t2\nUS\t20200301\t202003\t2020\t909345357\t1\nUS\t20200301\t202003\t2020\t909345360\t1\nUS\t20200301\t202003\t2020\t909345361\t1\nUS\t20200301\t202003\t2020\t909345363\t6\nUS\t20200301\t202003\t2020\t909345364\t1\nUS\t20200301\t202003\t2020\t909345365\t1\nUS\t20200301\t202003\t2020\t909345366\t7\nUS\t20200301\t202003\t2020\t909345369\t4\nUS\t20200301\t202003\t2020\t909345371\t9\nUS\t20200301\t202003\t2020\t909345372\t6\nUS\t20200301\t202003\t2020\t909345373\t1\nUS\t20200301\t202003\t2020\t909345374\t9\nUS\t20200301\t202003\t2020\t909345375\t1\nUS\t20200301\t202003\t2020\t909345376\t10\nUS\t20200301\t202003\t2020\t909345379\t3\nUS\t20200301\t202003\t2020\t909345381\t3\nUS\t20200301\t202003\t2020\t909345382\t1\nUS\t20200301\t202003\t2020\t909345383\t10\nUS\t20200301\t202003\t2020\t909345384\t1\nUS\t20200301\t202003\t2020\t909345385\t1\nUS\t20200301\t202003\t2020\t909345386\t1\nUS\t20200301\t202003\t2020\t909345387\t1\nUS\t20200301\t202003\t2020\t909345388\t2\nUS\t20200301\t202003\t2020\t909345389\t2\nUS\t20200301\t202003\t2020\t909345390\t3\nUS\t20200301\t202003\t2020\t909345391\t1\nUS\t20200301\t202003\t2020\t909345392\t1\nUS\t20200301\t202003\t2020\t909345393\t1\nUS\t20200301\t202003\t2020\t909345394\t1\nUS\t20200301\t202003\t2020\t909345395\t1\nUS\t20200301\t202003\t2020\t909345396\t1\nUS\t20200301\t202003\t2020\t909345398\t1\nUS\t20200301\t202003\t2020\t909345399\t1\nUS\t20200301\t202003\t2020\t909345400\t1\nUS\t20200301\t202003\t2020\t909345401\t5\nUS\t20200301\t202003\t2020\t909345402\t1\nUS\t20200301\t202003\t2020\t909345403\t5\nUS\t20200301\t202003\t2020\t909345405\t1\nUS\t20200301\t202003\t2020\t909345406\t3\nUS\t20200301\t202003\t2020\t909345407\t1\nUS\t20200301\t202003\t2020\t909345408\t1\nUS\t20200301\t202003\t2020\t909345409\t1\nUS\t20200301\t202003\t2020\t909345410\t1\nUS\t20200301\t202003\t2020\t909345411\t1\nUS\t20200301\t202003\t2020\t909345412\t4\nUS\t20200301\t202003\t2020\t909345413\t1\nUS\t20200301\t202003\t2020\t909345414\t9\nUS\t20200301\t202003\t2020\t909345415\t1\nUS\t20200301\t202003\t2020\t909345416\t1\nUS\t20200301\t202003\t2020\t909345417\t2\nUS\t20200301\t202003\t2020\t909345418\t1\nUS\t20200301\t202003\t2020\t909345419\t1\nUS\t20200301\t202003\t2020\t909345420\t1\nUS\t20200301\t202003\t2020\t909345422\t1\nUS\t20200301\t202003\t2020\t909345425\t1\nUS\t20200301\t202003\t2020\t909345426\t1\nUS\t20200301\t202003\t2020\t909345427\t1\nUS\t20200301\t202003\t2020\t909345428\t1\nUS\t20200301\t202003\t2020\t909345429\t1\nUS\t20200301\t202003\t2020\t909345430\t1\nUS\t20200301\t202003\t2020\t909345431\t1\nUS\t20200301\t202003\t2020\t909345433\t1\nUS\t20200301\t202003\t2020\t909345434\t1\nUS\t20200301\t202003\t2020\t909345436\t1\nUS\t20200301\t202003\t2020\t909345437\t1\nUS\t20200301\t202003\t2020\t909345438\t1\nUS\t20200301\t202003\t2020\t909345439\t1\nUS\t20200301\t202003\t2020\t909345440\t1\nUS\t20200301\t202003\t2020\t909345441\t1\nUS\t20200301\t202003\t2020\t909345442\t1\nUS\t20200301\t202003\t2020\t909345443\t1\nUS\t20200301\t202003\t2020\t909345445\t2\nUS\t20200301\t202003\t2020\t909345446\t1\nUS\t20200301\t202003\t2020\t909345447\t1\nUS\t20200301\t202003\t2020\t909345448\t1\nUS\t20200301\t202003\t2020\t909345450\t1\nUS\t20200301\t202003\t2020\t909345451\t1\nUS\t20200301\t202003\t2020\t909345452\t1\nUS\t20200301\t202003\t2020\t909345453\t1\nUS\t20200301\t202003\t2020\t909345454\t1\nUS\t20200301\t202003\t2020\t909345455\t1\nUS\t20200301\t202003\t2020\t909345456\t1\nUS\t20200301\t202003\t2020\t909345457\t3\nUS\t20200301\t202003\t2020\t909345458\t1\nUS\t20200301\t202003\t2020\t909345459\t5\nUS\t20200301\t202003\t2020\t909345460\t3\nUS\t20200301\t202003\t2020\t909345461\t3\nUS\t20200301\t202003\t2020\t909345462\t6\nUS\t20200301\t202003\t2020\t909345463\t6\nUS\t20200301\t202003\t2020\t909345464\t1\nUS\t20200301\t202003\t2020\t909345465\t9\nUS\t20200301\t202003\t2020\t909345466\t3\nUS\t20200301\t202003\t2020\t909345467\t6\nUS\t20200301\t202003\t2020\t909345470\t1\nUS\t20200301\t202003\t2020\t909345471\t1\nUS\t20200301\t202003\t2020\t909345475\t2\nUS\t20200301\t202003\t2020\t909345476\t10\nUS\t20200301\t202003\t2020\t909345486\t3\nUS\t20200301\t202003\t2020\t909345487\t3\nUS\t20200301\t202003\t2020\t909345488\t2\nUS\t20200301\t202003\t2020\t909345489\t1\nUS\t20200301\t202003\t2020\t909345490\t3\nUS\t20200301\t202003\t2020\t909345491\t2\nUS\t20200301\t202003\t2020\t909345492\t1\nUS\t20200301\t202003\t2020\t909345493\t1\nUS\t20200301\t202003\t2020\t909345494\t3\nUS\t20200301\t202003\t2020\t909345498\t1\nUS\t20200301\t202003\t2020\t909345499\t3\nUS\t20200301\t202003\t2020\t909345502\t1\nUS\t20200301\t202003\t2020\t909345504\t9\nUS\t20200301\t202003\t2020\t909345511\t1\nUS\t20200301\t202003\t2020\t909345513\t1\nUS\t20200301\t202003\t2020\t909345514\t1\nUS\t20200301\t202003\t2020\t909345515\t1\nUS\t20200301\t202003\t2020\t909345516\t1\nUS\t20200301\t202003\t2020\t909345517\t1\nUS\t20200301\t202003\t2020\t909345518\t1\nUS\t20200301\t202003\t2020\t909345519\t1\nUS\t20200301\t202003\t2020\t909345520\t2\nUS\t20200301\t202003\t2020\t909345521\t1\nUS\t20200301\t202003\t2020\t909345522\t10\nUS\t20200301\t202003\t2020\t909345523\t1\nUS\t20200301\t202003\t2020\t909345525\t1\nUS\t20200301\t202003\t2020\t909345526\t1\nUS\t20200301\t202003\t2020\t909345527\t2\nUS\t20200301\t202003\t2020\t909345529\t3\nUS\t20200301\t202003\t2020\t909345530\t5\nUS\t20200301\t202003\t2020\t909345531\t3\nUS\t20200301\t202003\t2020\t909345533\t1\nUS\t20200301\t202003\t2020\t909345534\t1\nUS\t20200301\t202003\t2020\t909345535\t1\nUS\t20200301\t202003\t2020\t909345536\t1\nUS\t20200301\t202003\t2020\t909345537\t1\nUS\t20200301\t202003\t2020\t909345539\t1\nUS\t20200301\t202003\t2020\t909345540\t1\nUS\t20200301\t202003\t2020\t909345543\t2\nUS\t20200301\t202003\t2020\t909345544\t2\nUS\t20200301\t202003\t2020\t909345545\t1\nUS\t20200301\t202003\t2020\t909345546\t1\nUS\t20200301\t202003\t2020\t909345547\t1\nUS\t20200301\t202003\t2020\t909345548\t1\nUS\t20200301\t202003\t2020\t909345549\t1\nUS\t20200301\t202003\t2020\t909345550\t1\nUS\t20200301\t202003\t2020\t909345552\t1\nUS\t20200301\t202003\t2020\t909345554\t1\nUS\t20200301\t202003\t2020\t909345555\t1\nUS\t20200301\t202003\t2020\t909345557\t1\nUS\t20200301\t202003\t2020\t909345558\t1\nUS\t20200301\t202003\t2020\t909345559\t1\nUS\t20200301\t202003\t2020\t909345560\t1\nUS\t20200301\t202003\t2020\t909345562\t2\nUS\t20200301\t202003\t2020\t909345563\t6\nUS\t20200301\t202003\t2020\t909345564\t1\nUS\t20200301\t202003\t2020\t909345565\t5\nUS\t20200301\t202003\t2020\t909345567\t1\nUS\t20200301\t202003\t2020\t909345568\t2\nUS\t20200301\t202003\t2020\t909345569\t4\nUS\t20200301\t202003\t2020\t909345570\t1\nUS\t20200301\t202003\t2020\t909345571\t1\nUS\t20200301\t202003\t2020\t909345572\t5\nUS\t20200301\t202003\t2020\t909345573\t2\nUS\t20200301\t202003\t2020\t909345574\t2\nUS\t20200301\t202003\t2020\t909345575\t1\nUS\t20200301\t202003\t2020\t909345576\t1\nUS\t20200301\t202003\t2020\t909345577\t1\nUS\t20200301\t202003\t2020\t909345578\t1\nUS\t20200301\t202003\t2020\t909345579\t6\nUS\t20200301\t202003\t2020\t909345580\t1\nUS\t20200301\t202003\t2020\t909345581\t1\nUS\t20200301\t202003\t2020\t909345582\t1\nUS\t20200301\t202003\t2020\t909345583\t1\nUS\t20200301\t202003\t2020\t909345584\t1\nUS\t20200301\t202003\t2020\t909345585\t5\nUS\t20200301\t202003\t2020\t909345586\t1\nUS\t20200301\t202003\t2020\t909345587\t1\nUS\t20200301\t202003\t2020\t909345588\t1\nUS\t20200301\t202003\t2020\t909345589\t4\nUS\t20200301\t202003\t2020\t909345590\t6\nUS\t20200301\t202003\t2020\t909345591\t1\nUS\t20200301\t202003\t2020\t909345592\t1\nUS\t20200301\t202003\t2020\t909345593\t9\nUS\t20200301\t202003\t2020\t909345594\t1\nUS\t20200301\t202003\t2020\t909345595\t1\nUS\t20200301\t202003\t2020\t909345596\t1\nUS\t20200301\t202003\t2020\t909345597\t2\nUS\t20200301\t202003\t2020\t909345598\t2\nUS\t20200301\t202003\t2020\t909345600\t2\nUS\t20200301\t202003\t2020\t909345601\t2\nUS\t20200301\t202003\t2020\t909345602\t2\nUS\t20200301\t202003\t2020\t909345603\t1\nUS\t20200301\t202003\t2020\t909345605\t1\nUS\t20200301\t202003\t2020\t909345606\t1\nUS\t20200301\t202003\t2020\t909345607\t1\nUS\t20200301\t202003\t2020\t909345608\t1\nUS\t20200301\t202003\t2020\t909345609\t1\nUS\t20200301\t202003\t2020\t909345610\t2\nUS\t20200301\t202003\t2020\t909345611\t2\nUS\t20200301\t202003\t2020\t909345612\t1\nUS\t20200301\t202003\t2020\t909345613\t1\nUS\t20200301\t202003\t2020\t909345614\t1\nUS\t20200301\t202003\t2020\t909345615\t2\nUS\t20200301\t202003\t2020\t909345616\t2\nUS\t20200301\t202003\t2020\t909345617\t1\nUS\t20200301\t202003\t2020\t909345618\t6\nUS\t20200301\t202003\t2020\t909345619\t1\nUS\t20200301\t202003\t2020\t909345620\t2\nUS\t20200301\t202003\t2020\t909345621\t1\nUS\t20200301\t202003\t2020\t909345622\t2\nUS\t20200301\t202003\t2020\t909345623\t1\nUS\t20200301\t202003\t2020\t909345624\t1\nUS\t20200301\t202003\t2020\t909345625\t2\nUS\t20200301\t202003\t2020\t909345626\t1\nUS\t20200301\t202003\t2020\t909345627\t1\nUS\t20200301\t202003\t2020\t909345628\t1\nUS\t20200301\t202003\t2020\t909345630\t1\nUS\t20200301\t202003\t2020\t909345631\t1\nUS\t20200301\t202003\t2020\t909345632\t6\nUS\t20200301\t202003\t2020\t909345633\t6\nUS\t20200301\t202003\t2020\t909345634\t4\nUS\t20200301\t202003\t2020\t909345635\t6\nUS\t20200301\t202003\t2020\t909345636\t1\nUS\t20200301\t202003\t2020\t909345639\t6\nUS\t20200301\t202003\t2020\t909345640\t6\nUS\t20200301\t202003\t2020\t909345641\t11\nUS\t20200301\t202003\t2020\t909345643\t2\nUS\t20200301\t202003\t2020\t909345644\t4\nUS\t20200301\t202003\t2020\t909345645\t1\nUS\t20200301\t202003\t2020\t909345646\t1\nUS\t20200301\t202003\t2020\t909345648\t2\nUS\t20200301\t202003\t2020\t909345649\t2\nUS\t20200301\t202003\t2020\t909345650\t3\nUS\t20200301\t202003\t2020\t909345651\t2\nUS\t20200301\t202003\t2020\t909345652\t1\nUS\t20200301\t202003\t2020\t909345654\t6\nUS\t20200301\t202003\t2020\t909345657\t1\nUS\t20200301\t202003\t2020\t909345658\t1\nUS\t20200301\t202003\t2020\t909345659\t2\nUS\t20200301\t202003\t2020\t909345662\t1\nUS\t20200301\t202003\t2020\t909345664\t1\nUS\t20200301\t202003\t2020\t909345665\t2\nUS\t20200301\t202003\t2020\t909345666\t2\nUS\t20200301\t202003\t2020\t909345667\t1\nUS\t20200301\t202003\t2020\t909345668\t1\nUS\t20200301\t202003\t2020\t909345669\t1\nUS\t20200301\t202003\t2020\t909345670\t6\nUS\t20200301\t202003\t2020\t909345671\t1\nUS\t20200301\t202003\t2020\t909345672\t1\nUS\t20200301\t202003\t2020\t909345673\t1\nUS\t20200301\t202003\t2020\t909345674\t1\nUS\t20200301\t202003\t2020\t909345675\t1\nUS\t20200301\t202003\t2020\t909345676\t1\nUS\t20200301\t202003\t2020\t909345677\t1\nUS\t20200301\t202003\t2020\t909345678\t1\nUS\t20200301\t202003\t2020\t909345679\t2\nUS\t20200301\t202003\t2020\t909345680\t6\nUS\t20200301\t202003\t2020\t909345681\t6\nUS\t20200301\t202003\t2020\t909345682\t1\nUS\t20200301\t202003\t2020\t909345684\t1\nUS\t20200301\t202003\t2020\t909345685\t1\nUS\t20200301\t202003\t2020\t909345686\t7\nUS\t20200301\t202003\t2020\t909345687\t9\nUS\t20200301\t202003\t2020\t909345688\t2\nUS\t20200301\t202003\t2020\t909345689\t1\nUS\t20200301\t202003\t2020\t909345692\t1\nUS\t20200301\t202003\t2020\t909345693\t1\nUS\t20200301\t202003\t2020\t909345695\t1\nUS\t20200301\t202003\t2020\t909345696\t1\nUS\t20200301\t202003\t2020\t909345697\t1\nUS\t20200301\t202003\t2020\t909345698\t1\nUS\t20200301\t202003\t2020\t909345700\t1\nUS\t20200301\t202003\t2020\t909345701\t6\nUS\t20200301\t202003\t2020\t909345702\t1\nUS\t20200301\t202003\t2020\t909345703\t1\nUS\t20200301\t202003\t2020\t909345707\t1\nUS\t20200301\t202003\t2020\t909345712\t1\nUS\t20200301\t202003\t2020\t909345714\t2\nUS\t20200301\t202003\t2020\t909345728\t1\nUS\t20200301\t202003\t2020\t909345731\t2\nUS\t20200301\t202003\t2020\t909345733\t1\nUS\t20200301\t202003\t2020\t909345736\t1\nUS\t20200301\t202003\t2020\t909345737\t1\nUS\t20200301\t202003\t2020\t909345745\t1\nUS\t20200301\t202003\t2020\t909345766\t1\nUS\t20200301\t202003\t2020\t909345773\t1\nUS\t20200301\t202003\t2020\t909345803\t1\nUS\t20200301\t202003\t2020\t909345804\t1\nUS\t20200301\t202003\t2020\t909345819\t1\nUS\t20200301\t202003\t2020\t909345830\t1\nUS\t20200301\t202003\t2020\t909345837\t1\nUS\t20200301\t202003\t2020\t909345855\t1\nUS\t20200301\t202003\t2020\t909345856\t1\nUS\t20200301\t202003\t2020\t909345857\t1\nUS\t20200301\t202003\t2020\t909345858\t1\nUS\t20200301\t202003\t2020\t909345859\t1\nUS\t20200301\t202003\t2020\t909345862\t1\nUS\t20200301\t202003\t2020\t909345865\t1\nUS\t20200301\t202003\t2020\t909345879\t1\nUS\t20200301\t202003\t2020\t909345882\t1\nUS\t20200301\t202003\t2020\t909345884\t1\nUS\t20200301\t202003\t2020\t909345885\t2\nUS\t20200301\t202003\t2020\t909345889\t1\nUS\t20200301\t202003\t2020\t909345890\t1\nUS\t20200301\t202003\t2020\t909345902\t1\nUS\t20200301\t202003\t2020\t909345903\t1\nUS\t20200301\t202003\t2020\t909345906\t1\nUS\t20200301\t202003\t2020\t909345907\t1\nUS\t20200301\t202003\t2020\t909345908\t1\nUS\t20200301\t202003\t2020\t909345909\t1\nUS\t20200301\t202003\t2020\t909345913\t1\nUS\t20200301\t202003\t2020\t909345934\t1\nUS\t20200301\t202003\t2020\t909345936\t1\nUS\t20200301\t202003\t2020\t909345946\t1\nUS\t20200301\t202003\t2020\t909345949\t1\nUS\t20200301\t202003\t2020\t909345950\t1\nUS\t20200301\t202003\t2020\t909346058\t1\nUS\t20200301\t202003\t2020\t909346110\t1\nUS\t20200301\t202003\t2020\t909346119\t1\nUS\t20200301\t202003\t2020\t909346153\t1\nUS\t20200301\t202003\t2020\t909346155\t1\nUS\t20200301\t202003\t2020\t909346156\t1\nUS\t20200301\t202003\t2020\t909346157\t1\nUS\t20200301\t202003\t2020\t909346162\t1\nUS\t20200301\t202003\t2020\t909346174\t1\nUS\t20200301\t202003\t2020\t909346190\t1\nUS\t20200301\t202003\t2020\t909346208\t1\nUS\t20200301\t202003\t2020\t909346210\t1\nUS\t20200301\t202003\t2020\t909346212\t1\nUS\t20200301\t202003\t2020\t909346213\t1\nUS\t20200301\t202003\t2020\t909346214\t1\nUS\t20200301\t202003\t2020\t909346248\t1\nUS\t20200301\t202003\t2020\t909346249\t1\nUS\t20200301\t202003\t2020\t909346253\t1\nUS\t20200301\t202003\t2020\t909346254\t1\nUS\t20200301\t202003\t2020\t909346264\t1\nUS\t20200301\t202003\t2020\t909346289\t1\nUS\t20200301\t202003\t2020\t909346293\t1\nUS\t20200301\t202003\t2020\t909346317\t1\nUS\t20200301\t202003\t2020\t909346321\t1\nUS\t20200301\t202003\t2020\t909346323\t1\nUS\t20200301\t202003\t2020\t909346324\t1\nUS\t20200301\t202003\t2020\t909346331\t1\nUS\t20200301\t202003\t2020\t909346334\t1\nUS\t20200301\t202003\t2020\t909346367\t1\nUS\t20200301\t202003\t2020\t909346368\t1\nUS\t20200301\t202003\t2020\t909346374\t1\nUS\t20200301\t202003\t2020\t909346381\t1\nUS\t20200301\t202003\t2020\t909346398\t1\nUS\t20200301\t202003\t2020\t909346406\t1\nUS\t20200301\t202003\t2020\t909346410\t1\nUS\t20200301\t202003\t2020\t909346411\t1\nUS\t20200301\t202003\t2020\t909346418\t1\nUS\t20200301\t202003\t2020\t909346494\t1\nUS\t20200301\t202003\t2020\t909346495\t1\nUS\t20200301\t202003\t2020\t909346530\t1\nUS\t20200301\t202003\t2020\t909346531\t1\nUS\t20200301\t202003\t2020\t909346532\t1\nUS\t20200301\t202003\t2020\t909346533\t1\nUS\t20200301\t202003\t2020\t909346534\t1\nUS\t20200301\t202003\t2020\t909346535\t1\nUS\t20200301\t202003\t2020\t909346539\t1\nUS\t20200301\t202003\t2020\t909346540\t1\nUS\t20200301\t202003\t2020\t909346541\t1\nUS\t20200301\t202003\t2020\t909346544\t1\nUS\t20200301\t202003\t2020\t909346545\t1\nUS\t20200301\t202003\t2020\t909346547\t1\nUS\t20200301\t202003\t2020\t909346548\t1\nUS\t20200301\t202003\t2020\t909346551\t1\nUS\t20200301\t202003\t2020\t909346553\t1\nUS\t20200301\t202003\t2020\t909346554\t1\nUS\t20200301\t202003\t2020\t909346555\t1\nUS\t20200301\t202003\t2020\t909346556\t1\nUS\t20200301\t202003\t2020\t909346557\t1\nUS\t20200301\t202003\t2020\t909346558\t1\nUS\t20200301\t202003\t2020\t909346559\t1\nUS\t20200301\t202003\t2020\t909346560\t1\nUS\t20200301\t202003\t2020\t909346561\t1\nUS\t20200301\t202003\t2020\t909346565\t1\nUS\t20200301\t202003\t2020\t909346566\t1\nUS\t20200301\t202003\t2020\t909346567\t1\nUS\t20200301\t202003\t2020\t909346570\t1\nUS\t20200301\t202003\t2020\t909346573\t1\nUS\t20200301\t202003\t2020\t909346574\t1\nUS\t20200301\t202003\t2020\t909346576\t1\nUS\t20200301\t202003\t2020\t909346578\t1\nUS\t20200301\t202003\t2020\t909346579\t1\nUS\t20200301\t202003\t2020\t909346580\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062625_696442380",
+      "id": "20210122-005153_379729708",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26270"
+    },
+    {
+      "text": "%md\n# Requête 3",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Requête 3</h1>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062629_935912250",
+      "id": "20210121-232110_200232438",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26271"
+    },
+    {
+      "text": "%md\n### Themes",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Themes</h3>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062629_1485957870",
+      "id": "20210122-005610_2016244241",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26272"
+    },
+    {
+      "text": "%md\nPour une source de donnés passée en paramètre, affichez les thèmes dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque thème, permettez une agrégation par jour/mois/année.",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour une source de donnés passée en paramètre, affichez les thèmes dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque thème, permettez une agrégation par jour/mois/année.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062629_1584453809",
+      "id": "20210122-022023_1775729537",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26273"
+    },
+    {
+      "text": "//sourcecommonname text, date2 text, monthyear text, year text, themes3 text, numarticles int, meantone float, PRIMARY KEY ((sourcecommonname, date2, monthyear, year),themes3));\") }",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062629_907426443",
+      "id": "20210122-005907_77064019",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26274"
+    },
+    {
+      "text": "%cassandra\nSELECT * FROM table_r3_theme WHERE sourcecommonname = 'nytimes.com' LIMIT 50 ALLOW FILTERING;",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sourcecommonname": "string",
+                      "date2": "string",
+                      "monthyear": "string",
+                      "year": "string",
+                      "themes3": "string",
+                      "meantone": "string",
+                      "numarticles": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "sourcecommonname\tdate2\tmonthyear\tyear\tthemes3\tmeantone\tnumarticles\nnytimes.com\t20200301000000\t202003\t2020\t\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tCRISISLEX_C03_WELLBEING_HEALTH\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tCRISISLEX_C07_SAFETY\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tCRISISLEX_CRISISLEXREC\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tCRISISLEX_T03_DEAD\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tCRISISLEX_T09_DISPLACEDRELOCATEDEVACUATED\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tDELAY\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tECON_DEVELOPMENTORGS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tECON_DEVELOPMENTORGS_WORLD_HEALTH_ORGANIZATION\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tEDUCATION\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tGENERAL_HEALTH\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tKILL\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tLEADER\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tMANMADE_DISASTER_IMPLIED\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tMEDIA_MSM\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tMEDICAL\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_HOSPITAL\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_HOSPITALS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_MEDICAL_CENTER\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_SCHOOL\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_UNIVERSITIES\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_POINTSOFINTEREST_UNIVERSITY\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tSOC_QUARANTINE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_AIDGROUPS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_AIDGROUPS_WORLD_HEALTH_ORGANIZATION\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_CORONAVIRUS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_CORONAVIRUS_INFECTIONS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_DISEASE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_EPIDEMIC\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_INFECTION\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_INFECTIOUS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_DISEASE_INFECTIOUS_DISEASE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_ETHNICITY\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_ETHNICITY_AMERICAN\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_CHILD\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_COMMISSIONER\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_EMPLOYEE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_EPIDEMIOLOGIST\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_KING\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_OFFICER\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_OFFICIAL\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_OFFICIALS\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_PRESIDENT\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_SPECIALIST\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_FNCACT_WOMAN\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_MILITARY_TITLE\t-1.7801857\t12\nnytimes.com\t20200301000000\t202003\t2020\tTAX_MILITARY_TITLE_OFFICER\t-1.7801857\t12\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062630_483320649",
+      "id": "20210122-005146_590656926",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26275"
+    },
+    {
+      "text": "%md\n### Persons",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Persons</h3>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062630_724846103",
+      "id": "20210122-005621_1058119533",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26276"
+    },
+    {
+      "text": "%md\nPour une source de donnés passée en paramètre, affichez les personnes, lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque personne, permettez une agrégation par jour/mois/année.",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour une source de donnés passée en paramètre, affichez les personnes, lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque personne, permettez une agrégation par jour/mois/année.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062630_1948405547",
+      "id": "20210122-022044_463470045",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26277"
+    },
+    {
+      "text": "//sourcecommonname text, date2 text, monthyear text, year text, persons3 text, numarticles int, meantone float, PRIMARY KEY ((sourcecommonname, date2 , monthyear , year) ,persons3)",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062630_652333397",
+      "id": "20210122-010436_736495898",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26278"
+    },
+    {
+      "text": "%cassandra\nSELECT * FROM table_r3_persons WHERE sourcecommonname = 'nytimes.com' LIMIT 50 ALLOW FILTERING;",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sourcecommonname": "string",
+                      "date2": "string",
+                      "monthyear": "string",
+                      "year": "string",
+                      "persons3": "string",
+                      "meantone": "string",
+                      "numarticles": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "sourcecommonname\tdate2\tmonthyear\tyear\tpersons3\tmeantone\tnumarticles\nnytimes.com\t20200301000000\t202003\t2020\tclaire cain miller\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tfarah stockman\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\thaley holmer\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tjeff duchin\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tnicholas bogel-burroughs\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tscott gottlieb\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tsheila kaplan\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tstephen m hahn\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\twilliam schaffner\t-1.7801857\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062630_2144312505",
+      "id": "20210122-010911_892489523",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26279"
+    },
+    {
+      "text": "%md\n### Locations",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Locations</h3>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062631_773434256",
+      "id": "20210122-005642_648645901",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26280"
+    },
+    {
+      "text": "%md\nPour une source de donnés passée en paramètre, affichez les lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque lieu, permettez une agrégation par jour/mois/année.",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Pour une source de donnés passée en paramètre, affichez les lieux dont les articles de cette source parlent ainsi que le nombre d’articles et le ton moyen des articles pour chaque lieu, permettez une agrégation par jour/mois/année.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062631_2007583818",
+      "id": "20210122-022107_2131360041",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26281"
+    },
+    {
+      "text": "%cassandra\nSELECT * FROM table_r3_locations WHERE sourcecommonname = 'nytimes.com' LIMIT 50 ALLOW FILTERING;",
+      "user": "anonymous",
+      "dateUpdated": "2021-01-24T15:54:22+0100",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "sourcecommonname": "string",
+                      "date2": "string",
+                      "monthyear": "string",
+                      "year": "string",
+                      "locations4": "string",
+                      "meantone": "string",
+                      "numarticles": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "sourcecommonname\tdate2\tmonthyear\tyear\tlocations4\tmeantone\tnumarticles\nnytimes.com\t20200301000000\t202003\t2020\tCalifornia\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tChina\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tItaly\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tKing County\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tLake Oswego\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tMaine\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tNew York\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tOregon\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tSan Diego\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tSeattle\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tSouth Korea\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tUnited Kingdom\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tUnited States\t-1.7801857\t1\nnytimes.com\t20200301000000\t202003\t2020\tWashington\t-1.7801857\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1611500062631_2101152379",
+      "id": "20210122-010914_536998604",
+      "dateCreated": "2021-01-24T15:54:22+0100",
+      "status": "READY",
+      "$$hashKey": "object:26282"
+    }
+  ],
+  "name": "Requetes_EC2",
+  "id": "2FWHMDA6N",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Requetes_EC2"
+}
