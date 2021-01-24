@@ -1,5 +1,5 @@
 # Projet_NoSQL_GDELT
 
-!(https://github.com/rayhug0/Projet_NoSQL_GDELT/blob/main/images/[rayhug0]/[Projet_NoSQL_GDELT]/blob/[main]/cover.png?raw=true)
+![github-large](https://github.com/rayhug0/Projet_NoSQL_GDELT/cover.png)
 
 Projet complet : https://slides.com/rayhugo/project-gdelt/fullscreen
